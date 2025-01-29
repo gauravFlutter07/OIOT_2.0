@@ -1,0 +1,11 @@
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/model/choose_ride_model.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/choose_a_ride_controller.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/widgets/selected_container/sedan_select_ride_container.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/widgets/selected_container/suv_select_ride_container.dart';
+export 'package:oiot/src/home_oiot/home_online/driver_searching_animation/daily_ride_searching.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/widgets/selected_container/hatchback_select_ride_container.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/choose_a_ride_service.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/widgets/estimated_price/suv_estimated_price.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/widgets/estimated_price/sedan_estimated_price.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/widgets/estimated_price/hatchback_estimated_price.dart';
+export 'package:oiot/src/home_oiot/home_online/widgets/rider_header.dart';

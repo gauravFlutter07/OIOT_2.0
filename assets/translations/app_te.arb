@@ -1,0 +1,1437 @@
+{ 
+
+  "appTitle" : " ఓఈయోట్ ", 
+
+  "@appTitle" : { 
+
+    "description": " అప్లికేషన్ శీర్షిక " 
+
+  }, 
+
+   
+
+  "settings" : " సెట్టింగ్‌లు ", 
+
+  "uploadDocuments" : " పత్రాలను అప్‌లోడ్ చేయండి ", 
+
+  "waitForApproval" : " ఆమోదం కోసం వేచి ఉండండి ", 
+
+  "subscribeThePackage" : " ప్యాకేజీకి సభ్యత్వం పొందండి ", 
+
+  "done": " పూర్తయింది ", 
+
+ 
+
+ 
+
+  "hellopartner": " హలో భాగస్వామి ", 
+
+  "welcomebacktotowner": "Welcome back to Towner", 
+
+  "mobilenumber": " మొబైల్ నంబర్ ", 
+
+  "enteryourmobilenumber" : " మీ మొబైల్ నెంబర్ ను ఎంటర్ చేయండి ", 
+
+  "password" : " పాస్వర్డ్ ", 
+
+  "pleaseenterpassword":" దయచేసి పాస్‌వర్డ్‌ని నమోదు చేయండి ", 
+
+  "enterpassword":" పాస్‌వర్డ్‌ని నమోదు చేయండి ", 
+
+  "forgotpassword":" పాస్‌వర్డ్ మర్చిపోయాను?", 
+
+  "signin":" సైన్ ఇన్ చేయండి ", 
+
+  "donthaveanaccountswiperightto":" ఖాతా లేదా? దిగువ వచనంపై క్లిక్ చేయండి ", 
+
+  "createanewaccount":" కొత్త ఖాతాను సృష్టించండి ", 
+
+  "createAccountNow": " ఇప్పుడు ఖాతాను సృష్టించండి!", 
+
+ 
+
+  "forgotpasswordscreenintro":" చింతించకండి! అది జరుగుతుంది. దయచేసి\nమీ ఖాతాతో అనుబంధించబడిన మొబైల్ నంబర్‌ను నమోదు చేయండి.", 
+
+  "mobileemailaddress":" మొబైల్ నంబర్ ", 
+
+  "sentotp":" ఓటీపీ ని పంపండి ", 
+
+  "enterYourRegisteredMobileNumber":" మీ రిజిస్టర్డ్ మొబైల్ నంబర్‌ను నమోదు చేయండి ", 
+
+ 
+
+  "createaaccount": " ఖాతాను సృష్టించండి ", 
+
+  "firmbusinessname": " సంస్థ లేదా వ్యాపారం పేరు ", 
+
+  "ownername": " యజమాని పేరు ", 
+
+  "ownermobilenumber": " యజమాని మొబైల్ నంబర్ ", 
+
+  "ownerpassword": " యజమాని పాస్వర్డ్ ", 
+
+  "vehiclenumber": " వాహనం సంఖ్య ", 
+
+  "selectifownercumdriver":"Select if Owner Cum Driver", 
+
+  "drivermobilenumber":" డ్రైవర్ మొబైల్ నంబర్ ", 
+
+  "createpasswordpin":" పాస్‌వర్డ్ లేదా పిన్ సృష్టించండి ", 
+
+  "coinfirmpasswordpin":" కాయిన్‌ఫర్మ్ పాస్‌వర్డ్ లేదా పిన్ ", 
+
+  "selectthisboxifyouhaveareferralcode":" మీకు రెఫరల్ కోడ్ ఉంటే ఈ పెట్టెను ఎంచుకోండి ", 
+
+  "enterreferralcode":" రెఫరల్ కోడ్‌ని నమోదు చేయండి ", 
+
+  "fleetownercode":" ఫ్లీట్ ఓనర్ కోడ్ ", 
+
+  "channelpartnercode":" ఛానెల్ భాగస్వామి కోడ్ ", 
+
+  "register": " నమోదు చేసుకోండి ", 
+
+  "alreadyhaveanaccount": " ఖాతా కలిగి ఉన్నారా ", 
+
+  "signin": " సైన్ ఇన్ చేయండి ", 
+
+  "login": " లాగిన్ ", 
+
+  "enterRegisteredMobileNumber": " రిజిస్టర్డ్ మొబైల్ నంబర్‌ను నమోదు చేయండి ", 
+
+  "youHaveEnteredWrongMobileNumber": " మీరు తప్పు మొబైల్ నంబర్‌ని నమోదు చేసారు ", 
+
+  "dontWorryItHappensPleaseEnterNumber": " చింతించకండి! అది జరుగుతుంది. దయచేసి మీ ఖాతాతో అనుబంధించబడిన నంబర్‌ను నమోదు చేయండి ", 
+
+   
+
+  "chooseYour": " ఎంచుకోండి ", 
+
+  "preferredLanguage": " ఇష్టమైన భాష ", 
+
+   
+
+  "readyOnOiot": " ఓయోట్ లో సిద్ధంగా ఉంది ", 
+
+ 
+
+  "yourDestination": " మీ గమ్యం ", 
+
+ 
+
+  "findOnlineOfflineCab": " ఆన్‌లైన్/ఆఫ్‌లైన్ క్యాబ్‌ను కనుగొనండి ", 
+
+ 
+
+  "helloWelcome": " హలో ", 
+
+ 
+
+  "letsLogin": " లెట్స్ లాగిన్ ", 
+
+ 
+
+  "pleaseEnterTheVerificationCode": " దయచేసి ధృవీకరణ కోడ్‌ను నమోదు చేయండి ", 
+
+ 
+
+  "yourSetPinMustBeDifferentFromPreviousUsedPassword": "మీ సమితి పిన్\nగత ఉపయోగించిన సంకేతపదము నుండి భిన్నంగా ఉండాలి ", 
+
+ 
+
+  "yourpasswordResetSuccessfully":" మీ పాస్‌వర్డ్ రీసెట్\nవిజయవంతమైంది.", 
+
+ 
+
+  "welcomeToOIOT":" ఓఈయోట్ కి స్వాగతం ", 
+
+ 
+
+  "myWallet": " నా వాలెట్ ", 
+
+ 
+
+ 
+
+  "continueLanguage": " కొనసాగించు ", 
+
+  "skipOnBoarding": " దాటవేయి ", 
+
+  "nextOnboarding": " తరువాత ", 
+
+  "getStarted": " ప్రారంభించండి ", 
+
+  "getOnboard": " పొందండి ", 
+
+  "setOnboard": " సెట్ ", 
+
+  "goOnboard": " గో...", 
+
+  "onBoardDescriptionOne": " సరసమైన ధరలలో అధిక-నాణ్యత సేవలు. మా ఆఫర్‌లను అందరికీ అందుబాటులో ఉండేలా చేయడం ద్వారా బ్యాంకును విచ్ఛిన్నం చేయకుండా మేము శ్రేష్ఠతను నిర్ధారిస్తాము.", 
+
+  "onBoardDescriptionTwo": " పోటీ ధరల వద్ద అగ్రశ్రేణి పరిష్కారాలను అందించాలనే మా నిబద్ధత ప్రతి బడ్జెట్‌కు నాణ్యత అందుబాటులో ఉంటుందని హామీ ఇస్తుంది, అందరికీ ప్రాప్యత మరియు సంతృప్తిని పెంపొందిస్తుంది.", 
+
+  "onBoardDescriptionThree": " శ్రేష్ఠత పట్ల మా అచంచలమైన అంకితభావం మా సేవలు స్థిరంగా అత్యున్నత ప్రమాణాలకు అనుగుణంగా ఉండేలా చూస్తుంది, రాజీ లేకుండా అగ్రశ్రేణి పరిష్కారాలను కోరుకునే ప్రతి ఒక్కరికీ అందుబాటులో ఉండేలా చేస్తుంది.", 
+
+  "welcomeToA": " స్వాగతం ", 
+
+  "safeWelcome": " సురక్షితం ", 
+
+  "wayOfWelcome": " విధమైన ", 
+
+  "findingARide": " ఒక రైడ్ కనుగొనడం ", 
+
+ 
+
+  "pleaseProvideYourRegNumberToLogin": " లాగిన్ అవ్వడానికి మీ రిజిస్టర్డ్ మొబైల్ నెంబర్ ఇవ్వండి.", 
+
+ 
+
+ 
+
+ 
+
+  "individualCreateAccount": " వ్యక్తి ", 
+
+  "corporateCreateAccount": " కార్పొరేట్ ", 
+
+  "corporateNameCreateAccount": " కార్పొరేట్ పేరు ", 
+
+  "fullNameCreateAccount": " పూర్తి పేరు ", 
+
+  "emailAddressCreateAccount": " ఇమెయిల్ చిరునామా ", 
+
+  "maleCreateAccount": " పురుషుడు ", 
+
+  "femaleCreateAccount": " స్త్రీ ", 
+
+  "iAcceptAllTheCreateAccount": " నేను అన్నింటినీ అంగీకరిస్తున్నాను ", 
+
+  "termsAndConditionsCreateAccount": " నిబంధనలు మరియు షరతులు ", 
+
+  "createAccount": " ఖాతాను సృష్టించండి ", 
+
+  "hintTextCorporateNameCreateAccount": "123456789", 
+
+  "hintTextNameCreateAccount": " జాక్ ", 
+
+  "hintTextNumberCreateAccount": "+91 0000000000", 
+
+  "hintTextEmailCreateAccount": "test@oiot", 
+
+  "hintPleaseAcceptBeforeCreateAccount":" దయచేసి ఖాతాను సృష్టించే ముందు అంగీకరించండి ", 
+
+  "mpinLoginWithMpinorId": " మీ ఎంపీన్ తో లాగిన్ లేదా\nక్లియర్ టచ్ ఐడి తో లాగిన్ అవ్వండి ", 
+
+  "orYouCanLoginWithYour":" లేదా మీరు మీతో లాగిన్ చేయవచ్చు ", 
+
+  "userIdAndPassword":" యూజర్ ఐడీ, పాస్ వర్డ్ ", 
+
+  "verificationCode":" ధృవీకరణ కోడ్ ", 
+
+  "enterFourDigitCode":" 4 అంకెల కోడ్‌ని నమోదు చేయండి ", 
+
+  "verify":" నిర్ధారించండి ", 
+
+  "didntReceivedTheCode":" కోడ్ అందలేదు?", 
+
+  "setpin":" పీన్ని సెట్ చేయండి ", 
+
+  "typeYourPin":" మీ పిన్‌ని టైప్ చేయండి ", 
+
+  "retypeYourPin": " మీ పిన్‌ని మళ్లీ టైప్ చేయండి ", 
+
+  "submit": " సమర్పించండి ", 
+
+  "loginNow": " ఇప్పుడు లాగిన్ అవ్వండి ", 
+
+  "pleaseEnterName":" దయచేసి పూర్తి పేరును నమోదు చేయండి ", 
+
+  "pleaseEnterMobile":" దయచేసి మొబైల్ నంబర్‌ని నమోదు చేయండి ", 
+
+  "pleaseEnterEmailId":" దయచేసి ఇమెయిల్ ఐడిని నమోదు చేయండి ", 
+
+  "pleaseEnterCompleteMpin":" దయచేసి పూర్తి ఎంపీన్ ని నమోదు చేయండి ", 
+
+  "pleaseReEnterCompleteMpin":" దయచేసి పూర్తి ఎంపీన్ ని మళ్లీ నమోదు చేయండి ", 
+
+  "enterFourDigitPassword":" 4-అంకెల పాస్‌వర్డ్‌ని నమోదు చేయండి ", 
+
+  "reEnterFourDigitPassword":" 4-అంకెల కోడ్‌ని మళ్లీ నమోదు చేయండి ", 
+
+  "passwordmissmatch":" పాస్‌వర్డ్ సరిపోలలేదు ", 
+
+  "newPasswordCreatedSuccessfully":" కొత్త పాస్‌వర్డ్ విజయవంతంగా సృష్టించబడింది ", 
+
+ 
+
+ 
+
+ 
+
+  "welcometoOIOT": " ఓఈయోట్ కి స్వాగతం ", 
+
+  "updateProfile": " ప్రొఫైల్‌ను నవీకరించండి ", 
+
+  "goToBooking": " బుకింగ్‌కి వెళ్లండి ", 
+
+ 
+
+ 
+
+  "hello":" హలో, ", 
+
+  "email" : " ఇమెయిల్ ", 
+
+  "location": " స్థానము ", 
+
+  "state":" రాష్ట్రం ", 
+
+  "city":" నగరం ", 
+
+  "aadhaar":" ఆధార్ ", 
+
+  "dateOfBirth":" పుట్టిన తేది ", 
+
+  "yourReferralCode":" మీ రెఫరల్ కోడ్ ", 
+
+  "share":" షేర్ చేయండి ", 
+
+ 
+
+ 
+
+ 
+
+  "viewProfile":" ప్రొఫైల్ చూడు ", 
+
+  "uploadThePicture":" మీ చిత్రాన్ని అప్‌లోడ్ చేయండి ", 
+
+  "firstName":" మొదటి పేరు ", 
+
+  "lastName":" చివరి పేరు ", 
+
+  "gender":" లింగం ", 
+
+  "male":" పురుషుడు ", 
+
+  "female":" స్త్రీ ", 
+
+  "preferNotToSay":" చెప్పడం ఇష్టం లేదు ", 
+
+  "dateOfBirth":" పుట్టిన తేది ", 
+
+  "selectDate":" తేదీని ఎంచుకోండి ", 
+
+  "mobileNumber":" మొబైల్ నంబర్ ", 
+
+  "emailAddress":" ఇమెయిల్ చిరునామా ", 
+
+  "address":" చిరునామా ", 
+
+  "state":" రాష్ట్రం ", 
+
+  "city":" నగరం ", 
+
+  "sruthihint":" శృతి ", 
+
+  "agrawalhint":" అగర్వాల్ ", 
+
+  "sruthigmailcomhint":"sruthi_o@gmail.com", 
+
+  "friendsNagarBangalorehint":" ఫ్రెండ్స్ నగర్, బెంగళూరు ", 
+
+  "karnatakahint":" కర్ణాటక ", 
+
+  "bangalorehint":" బెంగళూరు ", 
+
+  "alternativeMobileNumber":" ప్రత్యామ్నాయ మొబైల్ నంబర్ ", 
+
+  "pleaseEnterFirstName":" దయచేసి మొదటి పేరును నమోదు చేయండి ", 
+
+  "pleaseEnterSecondName":" దయచేసి రెండవ పేరును నమోదు చేయండి ", 
+
+  "pleaseEnterAddress":" దయచేసి చిరునామాను నమోదు చేయండి ", 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  "addNBankAccount":" బ్యాంక్ ఖాతాను జోడించండి ", 
+
+  "changesSavedSuccessfully":" మార్పులు విజయవంతంగా సేవ్ చేయబడ్డాయి!", 
+
+  "saveChanges":" మార్పులను సేవ్ చేయండి ", 
+
+  "myProfile":" నా ప్రొఫైల్ ", 
+
+  "updateYourKyc":" కేవైసీ అప్ డేట్ చేయండి ", 
+
+  "pleaseUpdateYourKycDocumentsToProceedGettingOutFacilities":" దయచేసి \nసదుపాయాలను పొందడం కొనసాగించడానికి మీ కేవైసీ పత్రాలను అప్‌డేట్ చేయండి ", 
+
+  "updateKycNow":" కేవైసీ ని ఇప్పుడే అప్‌డేట్ చేయండి ", 
+
+  "kyc":" కేవైసీ ", 
+
+  "pan":" పాన్ ", 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  "selectAnyOneDocumentAndUpload":" ఏదైనా ఒక పత్రాన్ని ఎంచుకుని, అప్‌లోడ్ చేయండి ", 
+
+  "panNumber":" పాన్ నంబర్ ", 
+
+  "uploadPan":" పాన్ అప్‌లోడ్ చేయండి ", 
+
+  "aadhaarNumber":" ఆధార్ నంబర్ ", 
+
+  "uploadAadhaar":" ఆధార్ అప్ లోడ్ ", 
+
+  "uploading":" అప్‌లోడ్ చేస్తోంది ", 
+
+  "changesSavedSuccessfully":" మార్పులు విజయవంతంగా సేవ్ చేయబడ్డాయి!", 
+
+  "saveChanges":" మార్పులను సేవ్ చేయండి ", 
+
+  "uploadTheFiles":" ఫైల్‌లను అప్‌లోడ్ చేయండి ", 
+
+  "addBankDetails":" బ్యాంకు వివరాలను జోడించండి ", 
+
+  "accountHolderName":" ఉదా: రఘు ", 
+
+  "bankAccountNumber":" బ్యాంకు ఖాతా సంఖ్య ", 
+
+  "confirmBankAccountNumber":" బ్యాంక్ ఖాతా సంఖ్యను నిర్ధారించండి ", 
+
+  "ifscCode":" ఐఎఫ్ ఎస్ సీ కోడ్ ", 
+
+  "uploadFrontPageOfPassbook":" పాస్‌బుక్ మొదటి పేజీని అప్‌లోడ్ చేయండి ", 
+
+  "addUpi":" యుపిఐ జతచేయి ", 
+
+  "instantPaymentUsingUpiApp":" యూపీఐ యాప్‌ని ఉపయోగించి తక్షణ చెల్లింపు ", 
+
+  "addNow":" ఇప్పుడు జోడించండి ", 
+
+  "shruhiAgarwalBankhint":" ఉదా: శృతి అగర్వాల్ ", 
+
+  "bankAccountNumHint":"Eg: 1928 9123 9128 9123", 
+
+  "confirmBankAccountNumHint":"Eg: 1928 9123 9128 9123", 
+
+  "ifscHint":"Eg: SBIN293847", 
+
+  "yourBankAccountAddedSuccessfully":" మీ బ్యాంక్ ఖాతా విజయవంతంగా జోడించబడింది ", 
+
+  "next":" తరువాత ", 
+
+  "archive":" ఆర్కైవ్ ", 
+
+  "delete":" తొలగించు ", 
+
+  "clearall":" అన్నీ క్లియర్ చేయండి ", 
+
+  "oneItemDeleted":"1 అంశం తొలగించబడింది ", 
+
+  "undoAction":" చర్యను రద్దు చేయండి ", 
+
+  "allItemsDeleted":" అన్ని అంశాలు తొలగించబడ్డాయి ", 
+
+  "notificationss":" నోటిఫికేషన్‌లు ", 
+
+  "searchNotification":" శోధన నోటిఫికేషన్ ", 
+
+  "myWallet":" నా వాలెట్ ", 
+
+  "totalBalance":" మొత్తం బ్యాలెన్స్ ", 
+
+  "allTransactions":" అన్ని లావాదేవీలు ", 
+
+  "addMoney":"  డబ్బు జోడించండి ", 
+
+  "payNow":" ఇప్పుడు చెల్లించండి ", 
+
+  "sendMoney":" డబ్బు పంపండి ", 
+
+  "comingSoon":" త్వరలో రానుంది!", 
+
+  "requestMoney":" డబ్బు అభ్యర్థించండి ", 
+
+ 
+
+  "bonus":" బోనస్ ", 
+
+  "congratulations":" అభినందనలు!", 
+
+  "welcomeBonus":" స్వాగతం బోనస్ ", 
+
+  "referralBonus":" రెఫరల్ బోనస్ ", 
+
+  "couponBonus":" కూపన్ బోనస్ ", 
+
+  "subscriptionBonus":" సబ్‌స్క్రిప్షన్ బోనస్ ", 
+
+  "walletBonus":" వాలెట్ బోనస్ ", 
+
+  "performanceBonus":" పనితీరు బోనస్ ", 
+
+ 
+
+  "failed":" విఫలమైంది ", 
+
+  "moneyAddedToWalletSuccessfully":" వాలెట్‌కి డబ్బు విజయవంతంగా జోడించబడింది ", 
+
+  "pleaseWait":" దయచేసి వేచి ఉండండి ", 
+
+  "pleaseWaitUnlessUntilYou":" దయచేసి మీరు వేచి ఉండండి ", 
+
+  "getConfirmationFromUs":" మా నుండి నిర్ధారణ పొందండి.", 
+
+  "history":" చరిత్ర ", 
+
+  "selectDate":" తేదీని ఎంచుకోండి ", 
+
+  "addWallet":" వాలెట్‌ జతచేయి ", 
+
+  "addAmount":" మొత్తాన్ని జోడించండి ", 
+
+  "enterAmount":" మొత్తాన్ని నమోదు చేయండి ", 
+
+  "addMoney":" డబ్బు జోడించండి ", 
+
+  "addMoneyToWallet":" వాలెట్‌ కి డబ్బుని జోడించండి ", 
+
+  "allPaymentMethod":" అన్ని చెల్లింపు పద్ధతులు ", 
+
+  "card":" కార్డ్ ", 
+
+  "visaMasterCardMore":" వీసా, మాస్టర్ కార్డ్ & మరిన్ని ", 
+
+  "netBanking":" నెట్ బ్యాంకింగ్ ", 
+
+  "allIndiaBanks":" ఆల్ ఇండియా బ్యాంకులు ", 
+
+  "upi":" యూపీఐ ", 
+
+  "instantPaymentUsingUpiApp":" యూపీఐ యాప్‌ని ఉపయోగించి తక్షణ చెల్లింపు ", 
+
+  "proceed":"కొనసాగండి", 
+
+ 
+
+ 
+
+  "referFriends":" స్నేహితులను సంప్రదించండి ", 
+
+  "referralAndEarn":" రెఫరల్ & సంపాదించండి ", 
+
+  "inviteAFriendHereAndGet":" స్నేహితుడిని ఇక్కడకు ఆహ్వానించండి మరియు మా నుండి రిఫరల్\nబోనస్ పొందండి మరియు ఇది సహాయపడుతుంది.\nమీరు మరియు మీ స్నేహితులు కలిసి ఎదగడానికి.", 
+
+  "inviteAFriendNow":" ఇప్పుడే స్నేహితుడిని ఆహ్వానించండి ", 
+
+  "referralHistory":" రెఫరల్ చరిత్ర ", 
+
+ 
+
+ 
+
+  "subscriptions":" సబ్ స్క్రిప్షన్ లు ", 
+
+  "myPlans":" నా ప్రణాళికలు ", 
+
+  "viewHistory":" చరిత్రను వీక్షించండి ", 
+
+  "invoice":" ఇన్వాయిస్ ", 
+
+  "startDateAndTime":" ప్రారంభ తేదీ & సమయం ", 
+
+  "endDateAndTime":" ముగింపు తేదీ & సమయం ", 
+
+  "businessNameProfileId":" వ్యాపారం పేరు / ప్రొఫైల్ ఐడి ", 
+
+  "panNo":" పాన్ నెం.", 
+
+  "gstNo":" జీఎస్టీ నెం..", 
+
+  "totalCharges":" మొత్తం ఛార్జీలు ", 
+
+  "gstAmount":" జీఎస్టీ మొత్తం.", 
+
+  "coupenDiscount":" కూపన్ డిస్కౌంట్.", 
+
+  "pgCharges":" పీజీ ఛార్జీలు.", 
+
+  "bankCharges":" బ్యాంకు చార్జీలు.", 
+
+  "roundOff":" రౌండ్ ఆఫ్ ", 
+
+  "paymentMode":" చెల్లింపు విధానం ", 
+
+  "paidAmount":" చెల్లించిన మొత్తం ", 
+
+  "currentSubscription":" ప్రస్తుత సబ్ స్క్రిప్షన్ ", 
+
+  "viewInvoice":" ఇన్‌వాయిస్‌ని వీక్షించండి ", 
+
+  "subscribe":" సబ్ స్క్రైబ్ ", 
+
+  "recommendedForYou":" మీకు సిఫార్సు ", 
+
+  "annualDayPack":"365 రోజుల ప్యాక్ ", 
+
+  "itsaTrailPackForYear":" ఇది ఒక సంవత్సరం పాటు ట్రయల్ ప్యాక్ ", 
+
+  "sixMonthsPack":"180 రోజుల ప్యాక్ ", 
+
+  "itsaTrailPackforSixMonths":" ఇది 6 నెలల ట్రయల్ ప్యాక్ ", 
+
+  "threeMonthsPack":"90 రోజుల ప్యాక్ ", 
+
+  "itsaTrailPackforThreeMonths":" ఇది 3 నెలల ట్రయల్ ప్యాక్ ", 
+
+  "endDate":" ఆఖరి తేది ", 
+
+  "startDate":" ప్రారంబపు తేది ", 
+
+  "validity":" చెల్లుబాటు ", 
+
+  "yourSubscriptionHistory":" మీ సబ్ స్క్రిప్షన్ చరిత్ర ", 
+
+  "expired":" గడువు ముగిసింది ", 
+
+  "active":" యాక్టివ్ ", 
+
+  "mySubscription":" నా సబ్ స్క్రిప్షన్ ", 
+
+  "recommendedPlans":" సిఫార్సు చేయబడిన ప్రణాళికలు ", 
+
+  "oneYearPack":"1 సంవత్సరం ప్యాక్ ", 
+
+  "itsaTrailPackForAnnum":" ఇది 365 రోజుల ట్రయల్ ప్యాక్ ", 
+
+  "viewDetails":" వివరాలను వీక్షించండి ", 
+
+  "buyNow":" ఇప్పుడే కొనండి ", 
+
+  "sixMonthPack":"6 నెలల ప్యాక్ ", 
+
+  "itsaTrailPackForHalfYear":" ఇది 180 రోజుల ట్రయల్ ప్యాక్ ", 
+
+  "threeMonthPack":"3 నెలల ప్యాక్ ", 
+
+  "itsaTrailPackForQuarter":" ఇది 90 రోజుల ట్రయల్ ప్యాక్ ", 
+
+  "benefitOne":" ప్రయోజనం 1", 
+
+  "benefitTwo":" ప్రయోజనం 2", 
+
+  "benefitThree":" ప్రయోజనం 3", 
+
+  "benefitFour":" ప్రయోజనం 4", 
+
+  "benefitFive":" ప్రయోజనం 5", 
+
+  "applyCoupon":" కూపన్ వర్తించు ", 
+
+  "changePlan":" ప్లాన్ మార్చండి ", 
+
+  "apply":" దరఖాస్తు చేయండి ", 
+
+ 
+
+ 
+
+  "referralShare":" రెఫరల్/షేర్ ", 
+
+  "businessContacts":" వ్యాపార పరిచయాలు ", 
+
+  "myRides":" నా సవారీలు ", 
+
+  "myFavourites":" నా ఫేవరెట్స్ ", 
+
+  "performanceReport":" పనితీరు నివేదిక ", 
+
+  "settings":" సెట్టింగ్‌లు ", 
+
+  "faq":" ఎఫ్ ఎ క్యూ ", 
+
+  "helpCenterContactUs":" సహాయ కేంద్రం/మమ్మల్ని సంప్రదించండి ", 
+
+  "legal":" చట్టపరమైన ", 
+
+  "community":" కమ్యూనిటీ (22)", 
+
+  "logout":" లాగ్అవుట్ ", 
+
+  "version":" వెర్షన్ ", 
+
+ 
+
+  "purpose":" ప్రయోజనం ", 
+
+  "hybridTaxiSolution":" హైబ్రిడ్ టాక్సీ సొల్యూషన్ ", 
+
+  "payingSubscription":" చెల్లింపు సబ్ స్క్రిప్షన్ ", 
+
+  "walletAmount":" వాలెట్ మొత్తం ", 
+
+  "applyCoupon":" కూపన్ వర్తించు ", 
+
+  "enterCode":" కోడ్ వ్రాయండి ", 
+
+  "apply":" దరఖాస్తు చేసుకోండి ", 
+
+  "allPaymentMethods":" అన్ని చెల్లింపు పద్ధతులు ", 
+
+  "card":" కార్డ్ ", 
+
+  "visaMasterCardAndMore":" వీసా, మాస్టర్ కార్డ్ & మరిన్ని ", 
+
+  "netBanking":" నెట్ బ్యాంకింగ్ ", 
+
+  "allIndiaBanks":" ఆల్ ఇండియా బ్యాంకులు ", 
+
+  "upi":" యూపీఐ ", 
+
+  "instantPaymentUsingUpiApp":" యూపీఐ యాప్‌ని ఉపయోగించి తక్షణ చెల్లింపు ", 
+
+  "subscriptionCompletedSuccessfully":" సభ్యత్వం విజయవంతంగా పూర్తయింది", 
+
+  "pleaseEnterFourDigitPassword":" దయచేసి 4-అంకెల పాస్‌వర్డ్‌ని నమోదు చేయండి ", 
+
+  "pleaseReEnterFourDigitPassword":" దయచేసి 4-అంకెల పాస్‌వర్డ్‌ని మళ్లీ నమోదు చేయండి ", 
+
+  "pleaseEnterYourRegisteredMobileNumber":" దయచేసి మీ నమోదిత మొబైల్ నంబర్‌ను నమోదు చేయండి ", 
+
+  "pleaseEnteraValidTenDigitMobileNumber":" దయచేసి చెల్లుబాటు అయ్యే 10-అంకెల మొబైల్ నంబర్‌ను నమోదు చేయండి ", 
+
+   
+
+   
+
+   
+
+  "referralHistory":" రెఫరల్ చరిత్ర ", 
+
+  "referralTo":" రెఫరల్ ", 
+
+  "status":" స్థితి ", 
+
+  "referralCode":" రెఫరల్ కోడ్ ", 
+
+  "referralTo":" రెఫరల్ ", 
+
+  "dateAndTime":" తేదీ & సమయం ", 
+
+  "referFriends":" స్నేహితులను సూచించండి ", 
+
+  "shareFollowingCode":" ఈ క్రింది కోడ్ ని భాగస్వామ్యం చేయండి ", 
+
+  "driver":" డ్రైవర్ ", 
+
+  "rider":" రైడర్ ", 
+
+  "inviteFriends":" స్నేహితులను ఆహ్వానించండి ", 
+
+ 
+
+  "kycUpdatedSuccessfully":" Kyc విజయవంతంగా అప్ డేట్ చేయబడింది ", 
+
+  "turnOnIfYouHaveReferralCode":" మీకు రెఫరల్ కోడ్ ఉంటే ఆన్ చేయండి!", 
+
+  "enterReferralCode":" రెఫరల్ కోడ్‌ని నమోదు చేయండి ", 
+
+ 
+
+ 
+
+  "yourNewContactHasBeenSavedSuccessfully":" మీ కొత్త పరిచయం విజయవంతంగా సేవ్ చేయబడింది ", 
+
+ 
+
+  "discount":" డిస్కౌంట్ ", 
+
+  "expiry":" గడువు ముగిసింది ", 
+
+  "status":" స్థితి ", 
+
+  "tapToClaim":" క్లెయిమ్ చేయడానికి నొక్కండి ", 
+
+  "yourBonusOf":" మీ బోనస్ ", 
+
+  "hasBeenAddedToWallet":" మీ వాలెట్‌కి జోడించబడింది.", 
+
+ 
+
+  "businessContacts":" వ్యాపార పరిచయాలు ", 
+
+  "searchContact":" పరిచయాన్ని శోధించండి ", 
+
+  "syncContacts":" పరిచయాలను సింక్ చేయి ", 
+
+  "addContact":" పరిచయం జోడించడం ", 
+
+  "egRaghuYadav":" ఉదా: రఘు యాదవ్ ", 
+
+  "egMobileNumber":" ఉదా: 9876543215", 
+
+  "egEmailAddress":" ఉదా: raghu@gmail.com", 
+
+  "pleaseEnterFullName":" దయచేసి పూర్తి పేరును నమోదు చేయండి ", 
+
+  "bankAccountNumberMismatch":" బ్యాంక్ ఖాతా సంఖ్య సరిపోలలేదు ", 
+
+ 
+
+ 
+
+  "confirmation":" నిర్ధారణ ", 
+
+  "areYouSureWantToDeleteThisFavourite":" మీరు ఈ ఇష్టాన్ని ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?", 
+
+  "yes":" అవును ", 
+
+  "no":" కాదు ", 
+
+ 
+
+  "emergencyContact":" అత్యవసర సంప్రదింపు ", 
+
+  "noContactsFound":" పరిచయాలు ఏవీ కనుగొనబడలేదు!\nమీ పరిచయాలను సమకాలీకరించడానికి దిగువ బటన్‌ను నొక్కండి.", 
+
+  "noPhoneNumber":" ఫోన్ నంబర్ లేదు ", 
+
+ 
+
+ 
+
+  "dailyRide":" డైలీ రైడ్ ", 
+
+  "currentLocation":" ప్రస్తుత స్తలం ", 
+
+  "enterDestination":" గమ్యాన్ని నమోదు చేయండి ", 
+
+  "locateOnMap":" మ్యాప్‌లో గుర్తించండి ", 
+
+  "pleaseEnterCurrentLocation":" దయచేసి ప్రస్తుత స్థానాన్ని నమోదు చేయండి ", 
+
+  "pleaseEnterDestinationLocation":" దయచేసి గమ్యస్థాన స్థానాన్ని నమోదు చేయండి ", 
+
+  "someoneElseTakingThisRide":" ఈ రైడ్‌ని వేరొకరు చేస్తున్నారు?", 
+
+  "chooseAContactSoThatTheyAlsoGetDriverNumberVehicleDetailAndRideOtpViaSMS":" కాంటాక్ట్‌ను ఎంచుకోండి, తద్వారా వారు డ్రైవర్ నంబర్ వాహన వివరాలను కూడా పొందుతారు మరియు ఎస్ ఎంఎస్ లు ద్వారా ఓటీపీ ని రైడ్ చేస్తారు.", 
+
+  "mySelf":" నా ఆత్మ ", 
+
+  "chooseAnotherContact":" మరొక పరిచయాన్ని ఎంచుకోండి ", 
+
+  "contactName":" పరిచయం పేరు: ", 
+
+  "mobileNumberr":" Mobile Number: ", 
+
+  "doYouWantToTakeTravelInsurance":" మీరు ప్రయాణ బీమా తీసుకోవాలనుకుంటున్నారా?", 
+
+  "skip":" దాటవేయి ", 
+
+ 
+
+  "chooseARide":" ఒక రైడ్ ఎంచుకోండి ", 
+
+  "hatchback":" హ్యాచ్‌బ్యాక్ ", 
+
+  "sedan":" సెడాన్ ", 
+
+  "suv":" ఎస్ యూవీ ", 
+
+  "estimatedPricing":" అంచనా ధర ", 
+
+  "pleaseNoteYourFinalInvoice":"దయచేసి మీ తుది ఇన్‌వాయిస్ మీ వాస్తవ సమయం మరియు మీ పర్యటన యొక్క కిలోమీటర్ల ఆధారంగా ఉంటుందని గమనించండిs", 
+
+  "estimatedAmount":" అంచనా మొత్తం ", 
+
+  "bookingId":" బుకింగ్ ఐడి ", 
+
+  "pickupLocation":" పికప్ స్థానము ", 
+
+  "dropLocation":" డ్రాప్ స్థానం ", 
+
+  "serviceType":" సేవా రకం ", 
+
+  "package":" ప్యాకేజీ ", 
+
+  "basePrice":" ప్రాథమిక ధర(నిమి)", 
+
+  "extraKm":" అదనపు కి.మీ(రోజుకు)", 
+
+  "extraTime":" అదనపు సమయం (రోజుకు కనీసం గంటలు)", 
+
+  "totalDistance":" మొత్తం దూరం ", 
+
+  "totalRidingTime":" మొత్తం రైడింగ్ సమయం ", 
+
+  "bookNow":" ఇప్పుడు బుక్ ", 
+
+  "findingACleanAndSafeCabNearby":" సమీపంలోని శుభ్రమైన మరియు సురక్షితమైన\nక్యాబ్‌ను కనుగొనడం!", 
+
+  "cancelRideRequest":" రైడ్ అభ్యర్థనను రద్దు చేయండి ", 
+
+  "driverSearching":" డ్రైవర్ శోధన ", 
+
+  "remainingTime":" మిగిలిన సమయం ", 
+
+  "seconds":" సెకన్లు ", 
+
+  "rating":" రేటింగ్ ", 
+
+  "away":" దూరంగా ", 
+
+  "discount":" డిస్కౌంట్ ", 
+
+  "dicountPrice":" డిస్కౌంట్ ధర ", 
+
+  "reject":" తిరస్కరించు ", 
+
+  "select":" ఎంచుకోండి ", 
+
+  "driverOnTheWay":" దారిలో డ్రైవర్ ", 
+
+  "callDriver":" డ్రైవర్‌కి కాల్ చేయండి ", 
+
+  "support":" మద్దతు ", 
+
+  "cancelRide":" రైడ్‌ని రద్దు చేయండి ", 
+
+  "conditionsApply":" షరతులు వర్తిస్తాయి ", 
+
+  "driverReachedYourPickupLocation":" డ్రైవర్ మీ పికప్ స్థానానికి చేరుకున్నారు ", 
+
+  "otp":"OTP", 
+
+  "callDriver":" డ్రైవర్‌కి కాల్ చేయండి ", 
+
+  "tripId":" ట్రిప్ ఐడి ", 
+
+  "kmLeft":" కిలోమీటరు దూరం ", 
+
+  "timeLeft":" మిగిలి వున్న సమయం ", 
+
+  "destination":" గమ్యం ", 
+
+  "yourTripCompleted":" మీ ట్రిప్ పూర్తయింది!", 
+
+  "startDateTime":" ప్రారంభ తేదీ & సమయం ", 
+
+  "endDateTime":" ముగింపు తేదీ & సమయం ", 
+
+  "billingDetails":" బిల్లింగ్ వివరాలు ", 
+
+  "routeDetails":" రూట్ వివరాలు ", 
+
+  "amountToBePaid":" చెల్లించాల్సిన మొత్తం ", 
+
+  "totalCharges":" మొత్తం ఛార్జీలు ", 
+
+  "driverDiscount":" డ్రైవర్ డిస్కౌంట్ ", 
+
+  "convCharges":" కాన్. ఛార్జీలు ", 
+
+  "payableAmount":" చెల్లించవలసిన మొత్తం ", 
+
+  "payOnline":" ఆన్‌లైన్‌లో చెల్లించండి ", 
+
+  "payCash":" నగదు చెల్లింపు ", 
+
+  "approveProceed":" ఆమోదించండి & కొనసాగించండి ", 
+
+  "bookingType":" బుకింగ్ రకం ", 
+
+  "submitNow":" ఇప్పుడే సమర్పించండి ", 
+
+  "driverRatingSuccessPopUp":" డ్రైవర్ రేటింగ్ విజయవంతంగా సమర్పించబడింది ", 
+
+  "raiseTicket":" టికెట్ పెంచండి ", 
+
+  "thanksForYourValuableFeedback":" మీ విలువైన అభిప్రాయానికి ధన్యవాదాలు ", 
+
+  "rental":" అద్దె ", 
+
+  "vehicleType":" వాహనం రకం ", 
+
+  "pleaseSelectVehicleType":" దయచేసి వాహనం రకాన్ని ఎంచుకోండి ", 
+
+  "package":" ప్యాకేజీ ", 
+
+  "pleaseSelectPackage":" దయచేసి ఒక ప్యాకేజీని ఎంచుకోండి ", 
+
+  "applyCaps":" దరఖాస్తు చేయండి ", 
+
+  "getPrice":" ధర పొందండి ", 
+
+ 
+
+  "outstation":" అవుట్‌స్టేషన్ ", 
+
+  "selectDateTime":" తేదీ మరియు సమయాన్ని ఎంచుకోండి ", 
+
+  "oneWay":" వన్ వే ", 
+
+  "roundTrip":" రౌండ్ ట్రిప్ ", 
+
+ 
+
+  "dailyRide":" డైలీ రైడ్ ", 
+
+  "outstationRide":" అవుట్‌స్టేషన్ రైడ్ ", 
+
+  "rentalRide":" అద్దె రైడ్ ", 
+
+  "myRides":" నా రైడ్స్ ", 
+
+  "mySchedule":" నా షెడ్యూల్ ", 
+
+  "noFavourites":" ఇష్టమైనవి లేవు ", 
+
+  "aroundYou":" మీ చుట్టూ ", 
+
+  "goHome":" ఇంటికి వెళ్ళు ", 
+
+  "activeCaps":" యాక్టివ్ ", 
+
+  "more":" మరింత ", 
+
+ 
+
+ 
+
+ 
+
+  "myRides":" నా రైడ్స్ ", 
+
+  "selectedDateRange":" ఎంచుకున్న తేదీ పరిధి ", 
+
+  "conditionApply":" షరతు వర్తిస్తుంది ", 
+
+ 
+
+ 
+
+  "idNumber":" ఐడి ", 
+
+  "totalAmount":" మొత్తం ", 
+
+  "reason":" కారణం ", 
+
+  "close":" మూసివేయి ", 
+
+  "downloadInvoice":" ఇన్‌వాయిస్‌ని డౌన్‌లోడ్ చేయండి ", 
+
+  "vehicleModel":" వాహనం మోడల్ ", 
+
+  "tripDate":" పర్యటన తేదీ ", 
+
+  "tripTime":" ప్రయాణ సమయం ", 
+
+ 
+
+  "scheduled":" షెడ్యూల్ ", 
+
+  "interested":" ఆసక్తి ఉంది ", 
+
+  "accepted":" ఆమోదించబడిన ", 
+
+  "extraKm":" అదనపు కి.మీ ", 
+
+  "extraMinutes":" అదనపు నిమిషాలు ", 
+
+  "baseFare":" బేస్ ఫేర్ ", 
+
+  "reSchedule":" మళ్లీ షెడ్యూల్ చేయండి ", 
+
+  "minutes":" నిమిషాలు ", 
+
+  "upcoming":" రాబోయేది ", 
+
+  "scheduledTrips":" షెడ్యూల్డ్ పర్యటనలు ", 
+
+  "changeDate":" తేదీని మార్చండి ", 
+
+  "changeTime":" సమయాన్ని మార్చండి ", 
+
+  "changePickupLocation":" పికప్ స్థానాన్ని మార్చండి ", 
+
+  "changeDropLocation":" డ్రాప్ స్థానాన్ని మార్చండి ", 
+
+   
+
+   
+
+  "aboutUs":" మా గురించి ", 
+
+  "vision":" విజన్ ", 
+
+  "values":" విలువలు ", 
+
+  "contact":" సంప్రదించండి ", 
+
+  "privacyPolicy":" గోప్యతా విధానం ", 
+
+  "updateOn":" అప్‌డేట్ ఆన్ ", 
+
+  "alwaysShareYourRideDetails":" మీ రైడ్ వివరాలను ఎల్లప్పుడూ షేర్ చేయండి ", 
+
+  "saveEmergencyContact":" అత్యవసర పరిచయాన్ని సేవ్ చేయండి ", 
+
+ 
+
+  "changeLanguage":" భాష మార్చు ", 
+
+  "yourSubscription":" మీ సబ్ స్క్రిప్షన్ ", 
+
+  "travelInsurance":" ప్రయాణపు భీమా ", 
+
+  "advertisements":" ప్రకటనలు ", 
+
+  "tripSharing":" ట్రిప్ షేరింగ్ ", 
+
+  "phoneBook":" ఫోన్ బుక్ ", 
+
+  "auto":" ఆటో ", 
+
+  "manual":" మాన్యువల్ ", 
+
+ 
+
+  "faqs":" తరచుగా అడిగే ప్రశ్నలు ", 
+
+  "search":" వెతకండి ", 
+
+  "termsAndConditions":" నిబంధనలు & షరతులు ", 
+
+ 
+
+  "topQuestions":" అగ్ర ప్రశ్నలు ", 
+
+  "howToOperateAtrip":" యాత్రను ఎలా నిర్వహించాలి?", 
+
+  "howToBookaRide":" రైడ్‌ను ఎలా బుక్ చేసుకోవాలి?", 
+
+  "howToPayForRide":" రైడ్ కోసం ఎలా చెల్లించాలి ", 
+
+  "howToChangePassword":" నా పాస్‌వర్డ్‌ను ఎలా మార్చాలి ", 
+
+  "howToUpdateProfile":" నా ప్రొఫైల్‌ను ఎలా అప్‌డేట్ చేయాలి ", 
+
+  "viewAll":" అన్నీ వీక్షించండి ", 
+
+  "addNew":" కొత్తది జత పరచండి ", 
+
+  "addNewFaq":" కొత్త తరచుగా అడిగే ప్రశ్నలను జోడించండి ", 
+
+  "addAnswer":" సమాధానాన్ని జోడించండి ", 
+
+  "typeQuestions":" ప్రశ్నలను టైప్ చేయండి ", 
+
+  "addAnswer":" సమాధానాన్ని జోడించండి ", 
+
+  "stillHavingIssues":" ఇంకా సమస్యలు ఉన్నాయి?", 
+
+  "chatWithUs":" మాతో చాట్ చేయండి ", 
+
+  "callUs":" మాకు కాల్ చేయండి ", 
+
+  "addNewFaq":" కొత్త తరచుగా అడిగే ప్రశ్నలను జోడించండి ", 
+
+  "oiotCreatedSuccesfully":" మీ ఓఈయోట్ ఖాతా సృష్టించబడింది\nవిజయవంతంగా ", 
+
+  "noReferralCode":" రిఫరల్ కోడ్ లేదు ", 
+
+  "referralCode":" రెఫరల్ కోడ్ ", 
+
+  "checkOutthisReferralCode":" ఈ రెఫరల్ కోడ్‌ని చూడండి ", 
+
+  "shareReferralCode":" రెఫరల్ కోడ్ షేర్ చేయండి ", 
+
+  "mobileMustBeTenDigits":" మొబైల్ నంబర్ తప్పనిసరిగా 10 అంకెలు ఉండాలి ", 
+
+  "pleaseEnterValidEmailAddress":" దయచేసి చెల్లుబాటు అయ్యే ఇమెయిల్ చిరునామాను నమోదు చేయండి ", 
+
+  "empty":" ఖాళీ ", 
+
+  "edit":" సవరించు ", 
+
+  "pleaseEnterAadhaarNumber":" దయచేసి ఆధార్ నంబర్‌ని నమోదు చేయండి ", 
+
+  "pleaseEnterPanNumber":" దయచేసి పాన్ నంబర్‌ని నమోదు చేయండి ", 
+
+  "contactsSaved":" పరిచయాలు సేవ్ చేయబడ్డాయి ", 
+
+  "pleaseEnterTenDigitMobileNumber":" దయచేసి చెల్లుబాటు అయ్యే 10-అంకెల మొబైల్ నంబర్‌ను నమోదు చేయండి ", 
+
+  "ifYouInviteARider":" మీరు ఓఈయోట్ ని ఉపయోగించడానికి ఒక రైడర్‌ని ఆహ్వానిస్తే, మీరు\nరిఫరల్ బోనస్‌గా రూ. 500/-", 
+
+  "google":"Google", 
+
+  "facebook":" ఫేస్బుక్ ", 
+
+  "whatsapp":" వాట్సాప్ ", 
+
+  "linkedIn":" లింక్డ్ఇన్ ", 
+
+  "telegram":" టెలిగ్రామ్ ", 
+
+  "shareNow":" ఇప్పుడే షేర్ చేయండి ", 
+
+  "helpCentre":" సహాయ కేంద్రం ", 
+
+  "raiseAnIssue":" సమస్యను పరిష్కరించండి ", 
+
+  "appIssue":" యాప్ సమస్య ", 
+
+  "comment":" వ్యాఖ్య ", 
+
+  "uploadImage":" చిత్రాన్ని అప్‌లోడ్ చేయండి ", 
+
+  "browse":" విహరించు ", 
+
+  "noImageSelected":" చిత్రం ఏదీ ఎంచుకోబడలేదు!", 
+
+  "submitTicket":" టికెట్ సమర్పించండి ", 
+
+  "provideTheDetailBelow":" క్రింద వివరాలను అందించండి ", 
+
+  "settingsSavedSuccessfully":" సెట్టింగ్‌లు విజయవంతంగా సేవ్ చేయబడ్డాయి ", 
+
+  "saveSettings":" సెట్టింగ్ లను సేవ్ చేయండి ", 
+
+  "routeDetails":" రూట్ వివరాలు ", 
+
+  "thisServiceTypeIsNotAvailableInYourArea":" ఈ సర్వీస్ రకం మీ ప్రాంతంలో అందుబాటులో లేదు.", 
+
+  "hey":" హే ", 
+
+  "ourCommunity":" మా సంఘం ", 
+
+  "completed":" పూర్తయింది ", 
+
+  "somethingWentWrong":" ఎక్కడో తేడ జరిగింది ", 
+
+  "send":" పంపండి ", 
+
+  "uploadTheFiles":" ఫైల్‌లను అప్‌లోడ్ చేయండి ", 
+
+  "myCode":" నా కోడ్ ", 
+
+  "scan":" స్కాన్ ", 
+
+  "qrCode":" క్యూఆర్ కోడ్ ", 
+
+  "clickHereToScanQrCode":" క్యూఆర్ కోడ్ స్కాన్ చేయడానికి ఇక్కడ క్లిక్ చేయండి ", 
+
+  "seeMmore":" ఇంకా చూడండి ", 
+
+  "addMore":" మరిన్ని జోడించండి ", 
+
+  "submitTicket":" టికెట్ సమర్పించండి ", 
+
+  "ticketHistory":" టిక్కెట్ చరిత్ర ", 
+
+  "raiseNewTicket":" కొత్త టికెట్ తీసుకురండి ", 
+
+  "typeTheIssueHere":" సమస్యను ఇక్కడ టైప్ చేయండి...", 
+
+  "remark":" వ్యాఖ్యలు ", 
+
+  "legal":" చట్టపరమైన ", 
+
+  "serviceAgreement":" సేవ ఒప్పందం ", 
+
+  "privacyPolicy":" గోప్యతా విధానం ", 
+
+  "aboutUs":" మా గురించి ", 
+
+  "callDriver":" డ్రైవర్‌కి కాల్ చేయండి ", 
+
+  "dayPack":" డే ప్యాక్ ", 
+
+  "standardPlan":" ప్రామాణిక ప్రణాళిక ", 
+
+  "areYouSureYouWantToDelete":" మీరు తొలగించాలనుకుంటున్నారా ఖచ్చితంగా?", 
+
+  "yourEmergencyContactAddedSuccessfully":" మీ అత్యవసర సంప్రదింపు విజయవంతంగా జోడించబడింది ", 
+
+  "youCanOnlySaveTwoContactsAsEmergencyContact":" మీరు 2 కాంటాక్ట్‌లను మాత్రమే ఎమర్జెన్సీ కాంటాక్ట్‌గా సేవ్ చేయగలరు ", 
+
+  "failedToSaveSettings":" సెట్టింగ్‌లను సేవ్ చేయడంలో విఫలమైంది ", 
+
+  "addBankAccount":" బ్యాంక్ ఖాతాను జోడించండి ", 
+
+  "bankName":" బ్యాంక్ పేరు ", 
+
+  "accountHolderName":" ఖాతాదారుని పేరు ", 
+
+  "accountNumber":" ఖాతా సంఖ్య ", 
+
+  "uploadPassbookAndCancelledCheque":" పాస్‌బుక్ అప్‌లోడ్ & రద్దు చేయబడిన చెక్ ", 
+
+  "verifyAndAdd":" ధృవీకరించు మరియు చేర్చు ", 
+
+  "addUpiId":" యుపిఐ ఐడి జతచేయి ", 
+
+  "instantPaymentUsingUpiApp":" యూపీఐ యాప్ ద్వారా తక్షణ చెల్లింపు ", 
+
+  "bonusExpired":" బోనస్ గడువు ముగిసింది ", 
+
+  "thisBonusHasExpired":" ఈ బోనస్ గడువు ముగిసింది.", 
+
+  "expiryDate":" గడువు తేదీ ", 
+
+  "validationPeriod":" ధ్రువీకరణ కాలం ", 
+
+  "otherIssuesIfAny":" ఇతర సమస్యలు (ఏదైనా ఉంటే)", 
+
+  "finalConfirmation":" తుది నిర్ధారణ!", 
+
+  "tripReasonConfirmation":" మీరు ఖచ్చితంగా కారణంతో పర్యటనను రద్దు చేయాలనుకుంటున్నారా ", 
+
+  "cancel":"Cancel", 
+
+  "yourTripHasBeenCancelledSuccessfully":" మీ పర్యటన విజయవంతంగా రద్దు చేయబడింది.", 
+
+  "ok":"OK", 
+
+  "pleaseSelectOrEnteraReason":" దయచేసి కారణాన్ని ఎంచుకోండి లేదా నమోదు చేయండి ", 
+
+  "acceptedTripByAccident":" ప్రమాదవశాత్తు యాత్రను అంగీకరించారు ", 
+
+  "problemWithPickupRoute":" పికప్ మార్గంలో సమస్య ", 
+
+  "notSafeToPickUp":" పికప్ చేయడం సురక్షితం కాదు ", 
+
+  "heavyRainCantGoOut":" భారీ వర్షం, బయటకు వెళ్లలేని పరిస్థితి ", 
+
+  "taxiArrivalDelayedSignificantly":" టాక్సీ రాక గణనీయంగా ఆలస్యం అయింది ", 
+
+  "forgotAnEssentialItemAndNeedToReturnHome":" నిత్యావసర వస్తువును మర్చిపోయి ఇంటికి తిరిగి రావాలి ", 
+
+  "feelingUnwellAndPreferToStayHome":" అనారోగ్యంగా భావించి ఇంట్లోనే ఉండేందుకు ఇష్టపడతారు ", 
+
+  "model":" మోడల్ ", 
+
+  "driverId":" డ్రైవర్ ఐడి ", 
+
+  "driverName":" డ్రైవర్ పేరు ", 
+
+  "driverRating":" డ్రైవర్ రేటింగ్ ", 
+
+  "qRCodeForPayment":" చెల్లింపు కోసం క్యూఆర్ కోడ్ ", 
+
+  "paymentMethod":" చెల్లింపు పద్ధతి ", 
+
+  "upiOrNetBanking":" యూపీఐ / నెట్ బ్యాంకింగ్ ", 
+
+  "debitCreditCard":" డెబిట్/క్రెడిట్ కార్డ్ ", 
+
+  "willBeChargedForEachPerson":" ప్రతి వ్యక్తికి వసూలు చేయబడుతుంది ", 
+
+  "duration":" వ్యవధి ", 
+
+  "thankYou":" ధన్యవాదాలు ", 
+
+  "rateTheDriver":" డ్రైవర్‌ను రేట్ చేయండి ", 
+
+  "willDoLater":" తర్వాత చేస్తాను ", 
+
+  "fullName":" పూర్తి పేరు ", 
+
+  "alwaysShareMyRideDetailWithThisContact":" ఎల్లప్పుడూ ఈ పరిచయంతో\nనా రైడ్ వివరాలను షేర్ చేయండి ", 
+
+  "saveAsEmergencyContact":" ఎమర్జెన్సీ కాంటాక్ట్ వలే సేవ్ చేయండి ", 
+
+  "yourEmergencyContactHasBeenSavedSuccessfully":" మీ ఎమర్జెన్సీ కాంటాక్ట్ విజయవంతంగా సేవ్ చేయబడింది ", 
+
+  "sos":" ఎస్ఓఎస్ ", 
+
+  "activate":" యాక్టివేట్ ", 
+
+  "useWhenYouAreIn":" మీరు లోపల ఉన్నప్పుడు ఉపయోగించండి ", 
+
+  "emergencyText":" అత్యవసర!", 
+
+  "sosWillSentAnImmediateAlert":" ఎస్ఓఎస్ తక్షణ హెచ్చరికను పంపుతుంది ", 
+
+  "messageToTheFamily":" కుటుంబానికి సందేశం ", 
+
+  "membersOrThePeopleTrusted":" సభ్యుడు లేదా మీరు విశ్వసించిన వ్యక్తులు ", 
+
+  "addEmergencyContact":" అత్యవసర పరిచయాన్ని జోడించండి ", 
+
+  "addBusinessContact":" వ్యాపార పరిచయాన్ని జోడించండి ",
+  
+  "noNotificationsAvailable":"అవసరమైన నోటిఫికేషన్లు లేవు",
+
+  "website":"వెబ్సైట్",
+
+  "text":"వచనం",
+  
+  "rideIssue":"రైడ్ సమస్య",
+
+  "routeIssue":"మార్గం సమస్య",
+
+  "paymentRelated":"చెల్లింపు సంబంధించిన",
+
+  "other":"ఇతర",
+
+  "promotionalDiscountForNextRide":"తదుపరి రైడ్ కోసం ప్రచార తగ్గింపు",
+
+  "confirmAndClose":"నిర్ధారించండి & దగ్గరగా",
+
+  "shareInvoice":"షేర్ బిల్లు",
+
+  "userFeedback":"వినియోగదారు అభిప్రాయం",
+
+  "ticketId":"టిక్కెట్ ఐడి",
+
+  "issueCategory":"ఇష్యూ కేటగిరీ",
+
+  "pleaseEnterYourComment":"దయచేసి మీ వ్యాఖ్యను నమోదు చేయండి",
+
+  "ourTermsOfConditions":"మా షరతులు",
+
+  "acceptedOn":"న అంగీకరించబడింది",
+
+  "notificationInDetail":"వివరంగా నోటిఫికేషన్",
+
+  "noTitle":"టైటిల్ లేదు",
+
+  "noBody":"బాడీ లేదు",
+
+  "editProfile":"ప్రొఫైల్‌ని సవరించండి",
+
+  "addToFavourites":"ఇష్టమైన వాటిని జోడించండి",
+
+  "addNew":"కొత్తది జత పరచండి",
+
+  "customFavourite":"కస్టమ్ ఇష్టమైన..",
+
+  "pleaseEnterYourCustomFavorite":"దయచేసి మీకు ఇష్టమైన అనుకూలతను నమోదు చేయండి"
+
+
+
+} 
+
+ 

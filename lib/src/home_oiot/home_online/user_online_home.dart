@@ -1,0 +1,13 @@
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/my_rides_screen.dart';
+export 'package:oiot/src/drawer/my_rides/scheduled_trips/scheduled_screen_home.dart';
+export 'package:oiot/src/drawer/performance_reports/performance_report_screen.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/pick_up/pick_up_screen.dart';
+export 'package:oiot/src/home_oiot/home_online/my_qr_for_trip_scan/my_qr_and_scan_driver.dart';
+export 'package:oiot/src/home_oiot/home_online/user_online_home_controller.dart';
+export 'package:oiot/src/home_oiot/home_online/widgets/option_tile_network.dart';
+export 'package:oiot/src/home_oiot/home_offline/user_offline_home_screen.dart';
+// export 'package:carousel_slider/carousel_slider.dart';
+export 'package:oiot/src/home_oiot/home_online/carousal_model.dart';
+export 'package:oiot/src/home_oiot/home_online/user_online_model.dart';
+export 'package:oiot/src/home_oiot/home_online/widgets/option_tile_assetimage.dart';
+export 'package:oiot/src/home_oiot/home_online/user_online_service.dart';

@@ -1,0 +1,15 @@
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/my_riders_provider.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/sheduled_ride/scheduled_ride_screen.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/cancelled/cancelled_rides_screen.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/ongoing/ongoing_rides_screen.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/past/past_rides_screen.dart';
+export 'package:oiot/widgets/custom_text_widget.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/ongoing/ongoing_controller.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/accepted_ride/accepted_ride-controller.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/accepted_ride/model/accepted_ride_model.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/accepted_ride/accepted_ride_service.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/interested_ride/interested_ride_service.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/interested_ride/model/interested_ride_model.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/interested_ride/interested_driver_controller.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/sheduled_ride/scheduled_ride_service.dart';
+export 'package:oiot/src/drawer/my_rides/my_rides_screen/schedule/sheduled_ride/scheduled_tab_screen.dart';

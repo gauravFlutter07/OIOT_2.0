@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "14964769981",
+    "project_id": "oiot-mobile",
+    "storage_bucket": "oiot-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14964769981:android:d276b8e7d67f1a9515e3d4",
+        "android_client_info": {
+          "package_name": "com.oiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfxO0p1dCP60od5vg1YpYZXR9r61KkyUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

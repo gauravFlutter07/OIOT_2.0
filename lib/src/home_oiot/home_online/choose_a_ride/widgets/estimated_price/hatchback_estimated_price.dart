@@ -1,0 +1,275 @@
+import '../../../../../../imports.dart';
+import '../../../../../../models/basic_fare_modal.dart';
+
+// ignore: must_be_immutable
+class HatchbackEstimatePrice extends StatelessWidget {
+  final VehicleCategory estimatedFareModal;
+  HatchbackEstimatePrice({super.key, required this.estimatedFareModal});
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Widget build(BuildContext context) {
+
+    return Scaffold(
+      body: SafeArea(
+        child: Consumer<ChooseARideProvider>(
+          builder: (BuildContext context, provider, Widget? child) {
+            ChooseARideInvoiceModel? chooseARideData = provider.vehicleTypeInvoiceData;
+            return Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(mapBackground),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: padding12,
+                    child: RideHeader(
+                      scaffoldKey: _scaffoldKey,
+                    ),
+                  ),
+                  const Spacer(),
+                  Container(
+                    height: 600,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: whiteColor,
+                    ),
+                    child: Padding(
+                      padding: horizontalPadding10,
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            height15,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: padding8,
+                                  child: Text(
+                                    AppLocalizations.of(context)!
+                                        .estimatedPricing,
+                                    style: tsLargeBold,
+                                  ),
+                                ),
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: Icon(
+                                    Icons.cancel,
+                                    color: redColor,
+                                    size: 40,
+                                  ),
+                                )
+                              ],
+                            ),
+                            height15,
+                            Text(
+                              AppLocalizations.of(context)!
+                                  .pleaseNoteYourFinalInvoice,
+                              textAlign: centreAlign,
+                              style: tsRegularBoldGrey,
+                            ),
+                            height15,
+                            Text(
+                              AppLocalizations.of(context)!.estimatedAmount,
+                              style: tsRegularBold,
+                            ),
+                            height10,
+                            Text(
+                              '₹${estimatedFareModal.totalEstimationFare?.toString() ?? ''}',
+                              style: tsBigGreen,
+                            ),
+                            height10,
+                            Text(
+                              '${AppLocalizations.of(context)!.bookingId}: ',
+                              style: TextStyle(color: textBlack, fontSize: 20),
+                            ),
+                            height15,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.bookingType,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  estimatedFareModal.type??'',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.pickupLocation,
+                                  style: tsRegularBold,
+                                ),
+                                Text('',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.dropLocation,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  '',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.serviceType,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                    estimatedFareModal.tripTypeCode??'',
+
+                                    style: tsRegularBoldGrey)
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.package,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  "",
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.basePrice,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  estimatedFareModal.estimation?.vehicleDetails?.fareDetails?.baseFare.toString() ??'',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.extraKm,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  estimatedFareModal.estimation?.vehicleDetails?.fareDetails?.extraKm.toString() ??'',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.extraTime,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  estimatedFareModal.estimation?.vehicleDetails?.fareDetails?.extratime.toString() ??'',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.totalDistance,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  estimatedFareModal.estimation?.vehicleDetails?.fareDetails?.distance.toString() ??'',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height7,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.totalRidingTime,
+                                  style: tsRegularBold,
+                                ),
+                                Text(
+                                  estimatedFareModal.estimation?.vehicleDetails?.fareDetails?.travelTime.toString() ??'',
+                                  style: tsRegularBoldGrey,
+                                )
+                              ],
+                            ),
+                            height20,
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(left: 8.0, right: 8),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: CustomButton(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                 DriverSearchingAnimation(vehicleModal: estimatedFareModal,),
+                                          ),
+                                        );
+                                      },
+                                      title:
+                                          AppLocalizations.of(context)!.bookNow,
+                                      border: true,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 25,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}

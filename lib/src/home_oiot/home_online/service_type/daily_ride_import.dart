@@ -1,0 +1,10 @@
+export 'package:oiot/src/home_oiot/home_online/service_type/pick_up/pick_up_controller.dart';
+export 'package:oiot/src/home_oiot/home_online/widgets/map_page.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/pick_up/model/pick_up_model.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/myself_another_takingride/daily_ride_screen.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/pick_up/pick_up_service.dart';
+export 'package:flutter_contacts/flutter_contacts.dart';
+export 'package:oiot/src/home_oiot/home_online/choose_a_ride/choose_a_ride_screen.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/myself_another_takingride/daily_ride_controller.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/myself_another_takingride/daily_ride_service.dart';
+export 'package:oiot/src/home_oiot/home_online/service_type/pick_up/add_to_favourites/add_to_favourite.controller.dart';
