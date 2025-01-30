@@ -17,6 +17,7 @@ class ScheduledTabPage extends StatelessWidget {
           return ListView.separated(
             shrinkWrap: true,
             itemCount: provider.trips?.length??0,
+            padding: vertPadding20,
             itemBuilder: (context, index) {
               var modal = provider.trips![index];
               return rideWidget(context, modal);

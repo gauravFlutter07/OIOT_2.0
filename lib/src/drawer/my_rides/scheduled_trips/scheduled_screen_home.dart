@@ -1,4 +1,5 @@
 import '../../../../../../imports.dart';
+import '../my_rides_screen/schedule/sheduled_ride/scheduled_tab_screen.dart';
 
 class ScheduledHomeScreen extends StatelessWidget {
   const ScheduledHomeScreen({super.key});
@@ -59,15 +60,9 @@ class ScheduledHomeScreen extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              ScheduledTab(),
-              Padding(
-                padding: topPadding10,
-                child: InterestedRide(),
-              ),
-              Padding(
-                padding: topPadding10,
-                child: AcceptedRide(),
-              ),
+              ScheduledTabPage(),
+              InterestedRide(),
+              AcceptedRide(),
             ],
           ),
         ),

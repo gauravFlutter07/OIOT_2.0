@@ -185,10 +185,3 @@ Widget popupRow({
   );
 }
 
-
-git remote set-url origin https://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@github.com/gauravFlutter07/OIOT_2.2.git
-git@github.com:gauravFlutter07/OIOT_2.2.git
-git clone https://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@github.com:gauravFlutter07/OIOT_2.2.git
-
-git clone https://<TOKEN>@github.com/<USERNAME>/<REPOSITORY>.git
-
