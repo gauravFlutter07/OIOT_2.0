@@ -38,7 +38,7 @@ class ScheduledRideProvider extends ChangeNotifier {
 
 
 
-      final result = await RiderRepo.getPastTripHistory(map);
+      final result = await RiderRepo.scheduledTaxi(map);
 
       if(result is Exception){
         Fluttertoast.showToast(msg: "Something went wrong");

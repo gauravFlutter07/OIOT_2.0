@@ -78,9 +78,10 @@ class DriverSearchingProvider extends ChangeNotifier {
     'tripType': 'daily',
     'tripDate': DateFormat('dd-MM-yyyy').format(DateTime.now()),
     'paymentMode': 'Cash',
-    'pickupCity': 'Madurai',
+    'pickupCity': '',
     'requestFrom': 'app',
     'bookingType': 'rideNow',
+    "driverid": driverData.id,
     'serviceType': driverData.vehicleType,
     'estimationId': estId,
     'tripTime': DateFormat('hh:mm a').format(DateTime.now()),
@@ -90,6 +91,41 @@ class DriverSearchingProvider extends ChangeNotifier {
     'otherPhCode': '',
     'noofseats': "1"
   };
+
+  /*var map2 = {
+    "userId": "",
+    "phone": "",
+    "email": "",
+    "fname": "",
+    "requestFrom": "app",
+    "adminId": "",
+    "promo": "",
+    "promoAmt": "",
+    "tripType": "daily",
+    "driverAssignmentType": "auto-assign",
+    "driverName": "",
+    "driverId": driverData.id,
+    "tripTime": DateFormat('hh:mm a').format(DateTime.now()),
+    "tripDate": DateFormat('dd-MM-yyyy').format(DateTime.now()),
+    "paymentMode": "Cash",
+    "pickupCity": "",
+    "bookingType": "rideNow",
+    "serviceType": vehicleCategoryModal.type,
+    "estimationId": estId,
+    "hotelId": "",
+    "packageId": "",
+    "vehicleTypeId": "",
+    "pickupLat": "",
+    "pickupLng": "",
+    "noofseats": 0,
+    "pickupAddress": "",
+    "outstationType": "",
+    "dropLng": "",
+    "dropLat": "",
+    "acneeded": true,
+    "startDay": "",
+    "returnDay": ""
+  };*/
 
 
 

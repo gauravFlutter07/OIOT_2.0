@@ -136,7 +136,7 @@ class MyProfile extends StatelessWidget {
                               Text(AppLocalizations.of(context)!.location,
                                   style: tsRegularBoldGrey),
                               Text(
-                                myProfile.address?.firstOrNull ?? AppLocalizations.of(context)!.empty,
+                                myProfile.address?.firstOrNull?["address"] ?? AppLocalizations.of(context)!.empty,
                                 style: tsRegularBold,
                               ),
                             ],
@@ -152,7 +152,7 @@ class MyProfile extends StatelessWidget {
                               Text(
                                 myProfile.state?.isEmpty??false
                                     ? AppLocalizations.of(context)!.empty
-                                    : myProfile.state!,
+                                    : myProfile.statename!,
                                 style: tsRegularBold,
                               ),
                             ],
@@ -168,7 +168,7 @@ class MyProfile extends StatelessWidget {
                               Text(
                                 myProfile.city?.isEmpty??false
                                     ? AppLocalizations.of(context)!.empty
-                                    : myProfile.city!,
+                                    : myProfile.cityname!,
                                 style: tsRegularBold,
                               ),
                             ],
