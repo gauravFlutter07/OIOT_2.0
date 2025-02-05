@@ -1,3 +1,7 @@
+import 'package:firebase_database/firebase_database.dart';
+import 'package:get/get.dart';
+
+import '../../../firebase_api/firebase_trip_flow.dart';
 import '../../../imports.dart';
 
 class UserOnlineHomeController extends ChangeNotifier {
@@ -35,5 +39,9 @@ class UserOnlineHomeController extends ChangeNotifier {
         await userOnlineService.fetchCarouselImages();
     _carouselImages = result!;
     notifyListeners();
+  }
+
+  Future<void> chekFIrebase(BuildContext context) async {
+    // FirebaseTripFlow.initializeTripFlow(context);
   }
 }

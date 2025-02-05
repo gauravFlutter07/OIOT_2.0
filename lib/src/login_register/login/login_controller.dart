@@ -1,4 +1,8 @@
 import 'dart:developer';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:get/get.dart';
 import 'package:oiot/api/rider_repo.dart';
 import 'package:oiot/src/login_register/login/model/user_data_model.dart';
 import '../../../imports.dart';
@@ -50,6 +54,7 @@ class LoginProvider extends ChangeNotifier {
       await localStorageService.setToken(result["token"]);
       await localStorageService.setIsLoggedIn(true);
       String token = localStorageService.token;
+      String fbCustomToken = result["FbCusToken"];
       log("login token: $token");
 
       /*_userData = UserDataModel.fromJson(result["userData"]);
@@ -61,7 +66,29 @@ class LoginProvider extends ChangeNotifier {
       notifyListeners();
 
 
+      try {
+        DatabaseReference ref = FirebaseDatabase.instance.ref();
+        UserCredential userCredential = await FirebaseAuth.instance.signInWithCustomToken(fbCustomToken);
+
+        FirebaseMessaging.instance.getToken().then((value) {
+          String? token = value;
+
+          if(userCredential.user!=null){
+            var userId = userCredential.user?.uid;
+            if(userId!=null){
+
+              ref.child("riders_data").child(userId).child("FCM_id").set(token);
+
+            }
+          }
+        });
+
+      } catch (e) {
+        print("Error signing in with custom token: $e");
+      }
+
       Fluttertoast.showToast(msg: '${result['message']}');
+
 
       Navigator.pushNamedAndRemoveUntil(
           context, RouteClass.userOfflineHome, (route) => false);

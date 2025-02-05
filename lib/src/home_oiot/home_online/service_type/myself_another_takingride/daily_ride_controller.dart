@@ -98,7 +98,7 @@ class DailyRideController extends ChangeNotifier {
 
   Timer? _timer;
   final DatabaseReference _databaseReference =
-      FirebaseDatabase.instance.reference().child('rider_locations');
+      FirebaseDatabase.instance.ref().child('rider_locations');
 
   final String driverId = "unique_rider_id"; // Unique identifier for the rider
 

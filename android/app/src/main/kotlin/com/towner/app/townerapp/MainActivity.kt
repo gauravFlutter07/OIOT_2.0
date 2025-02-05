@@ -1,4 +1,4 @@
-package com.oiot
+package com.oiot.app
 
 import io.flutter.embedding.android.FlutterActivity
 

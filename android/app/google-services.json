@@ -1,21 +1,69 @@
 {
   "project_info": {
-    "project_number": "14964769981",
-    "project_id": "oiot-mobile",
-    "storage_bucket": "oiot-mobile.appspot.com"
+    "project_number": "20316045286",
+    "firebase_url": "https://towner-2-devtest-default-rtdb.firebaseio.com",
+    "project_id": "towner-2-devtest",
+    "storage_bucket": "towner-2-devtest.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:14964769981:android:d276b8e7d67f1a9515e3d4",
+        "mobilesdk_app_id": "1:20316045286:android:f80765484ec09dda9b2027",
         "android_client_info": {
-          "package_name": "com.oiot"
+          "package_name": "com.oiot.app"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBfxO0p1dCP60od5vg1YpYZXR9r61KkyUo"
+          "current_key": "AIzaSyCom7t82nKuLMKXy_2whb6lQqXhBVUbsVA"
+        },
+        {
+          "current_key": "AIzaSyAsDHLtY0_OCxn3fgvDXWI6vjUj4rshqVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20316045286:android:1efb8e79b495a1c89b2027",
+        "android_client_info": {
+          "package_name": "com.towner.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCom7t82nKuLMKXy_2whb6lQqXhBVUbsVA"
+        },
+        {
+          "current_key": "AIzaSyAsDHLtY0_OCxn3fgvDXWI6vjUj4rshqVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20316045286:android:d6bcfc84a39776be9b2027",
+        "android_client_info": {
+          "package_name": "com.towner.taxi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCom7t82nKuLMKXy_2whb6lQqXhBVUbsVA"
+        },
+        {
+          "current_key": "AIzaSyAsDHLtY0_OCxn3fgvDXWI6vjUj4rshqVg"
         }
       ],
       "services": {

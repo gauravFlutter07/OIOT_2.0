@@ -8,6 +8,8 @@ class UserOnlineHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -15,6 +17,7 @@ class UserOnlineHome extends StatelessWidget {
             padding: padding12,
             child: Consumer<UserOnlineHomeController>(
               builder: (BuildContext context, provider, Widget? child) {
+                provider.chekFIrebase(context);
                 List<HomeScreenServiceModel> onlineHomeList =
                     provider.onlineHomeData;
                 List<CarouselImageModel> carouselImages =

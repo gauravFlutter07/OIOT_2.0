@@ -4,6 +4,7 @@ plugins {
     // id 'com.google.gms.google-services'
     // END: FlutterFire Configuration
     id "kotlin-android"
+    id 'com.google.gms.google-services'
     id "dev.flutter.flutter-gradle-plugin"
 }
 
@@ -26,7 +27,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.oiot"
+    namespace "com.oiot.app"
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
 
@@ -45,13 +46,14 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.oiot"
+        applicationId "com.oiot.app"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        minSdkVersion 23
     }
 
     buildTypes {
@@ -67,4 +69,10 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.3.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:25.0.0'
+}

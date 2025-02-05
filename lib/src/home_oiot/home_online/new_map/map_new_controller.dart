@@ -124,7 +124,7 @@ class NewMapProvider with ChangeNotifier {
 
   Future<void> _loadVehicleMarkers([String vehicleType = 'all']) async {
     final DatabaseReference databaseRef =
-        FirebaseDatabase.instance.reference().child('vehicles');
+        FirebaseDatabase.instance.ref().child('vehicles');
 
     // Cancel previous subscription if exists
     _vehiclesSubscription?.cancel();
