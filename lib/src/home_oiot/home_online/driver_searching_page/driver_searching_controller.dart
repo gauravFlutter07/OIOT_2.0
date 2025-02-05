@@ -7,6 +7,7 @@ import 'package:oiot/src/home_oiot/home_online/driver_searching_page/model/ride_
 import '../../../../api/rider_repo.dart';
 import '../../../../imports.dart';
 import '../../../../models/basic_fare_modal.dart';
+import '../service_type/widgets/trip_completed.dart';
 import 'model/searched_driver_list_modal.dart';
 
 class DriverSearchingProvider extends ChangeNotifier {
@@ -315,13 +316,25 @@ Future<void> initializeTripFlow(context, RideRequestSuccessModal modal) async {
 
       case "3":
 
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+            const TripID(),
+          ),
+        );
         // tripTitle.text = 'Welcome happy ride';
         print("Firebase  ---- Welcome happy ride");
         break;
 
       case "4":
         // tripTitle.text = 'Your trip has ended';
-
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TripCompleted(),
+          ),
+        );
       print("Firebase  ---- Your trip has ended");
         break;
 

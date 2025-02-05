@@ -14,20 +14,23 @@ class DriverOnWay extends StatelessWidget {
         children: [
           Consumer<PickupProvider>(
             builder: (context, provider, child) {
+              provider.searchLocation(provider.placeId, provider.description);
+              print("Marker :- ${provider.markers.length}");
+              print("polylines :- ${provider.polylines.length}");
               if (provider.currentPosition != null) {
                 return SizedBox(
                   height: double.infinity,
                   child: GoogleMap(
                     initialCameraPosition: CameraPosition(
                       target: LatLng(
-                        provider.currentPosition!.latitude,
-                        provider.currentPosition!.longitude,
+                        provider.pickupLatLng!.latitude,
+                        provider.pickupLatLng!.longitude,
                       ),
                       zoom: 14.0,
                     ),
                     onMapCreated: (controller) {
-                      provider.initMapController(controller);
-                      provider.moveCameraToPosition(provider.currentPosition!);
+                      // provider.initOtherMapController(controller);
+                      // provider.moveOtherCameraToPosition(provider.currentPosition!);
                     },
                     myLocationEnabled: true,
                     myLocationButtonEnabled: true,

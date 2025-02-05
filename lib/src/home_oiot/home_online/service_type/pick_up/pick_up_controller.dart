@@ -67,6 +67,9 @@ class PickupProvider extends ChangeNotifier {
 
   bool get isclicked => _isclicked;
 
+  String placeId = '';
+  String description = '';
+
   Color isClickedFunction() {
     _isclicked = !_isclicked;
     if (_isclicked == true) {
@@ -263,6 +266,7 @@ class PickupProvider extends ChangeNotifier {
   String? _distanceText;
   String? _durationText;
   GoogleMapController? _mapController;
+  GoogleMapController? _otherMapController;
 
   TextEditingController get currentLocationController =>
       _currentLocationController;
@@ -278,6 +282,7 @@ class PickupProvider extends ChangeNotifier {
   String? get distanceText => _distanceText;
   String? get durationText => _durationText;
   GoogleMapController? get mapController => _mapController;
+  GoogleMapController? get otherMapController => _otherMapController;
 
   BitmapDescriptor? _pickupIcon;
 
@@ -285,6 +290,13 @@ class PickupProvider extends ChangeNotifier {
 
   void initMapController(GoogleMapController controller) {
     _mapController = controller;
+    if (_currentPosition != null) {
+      moveCameraToPosition(_currentPosition!);
+    }
+  }
+
+  void initOtherMapController(GoogleMapController controller) {
+    _otherMapController = controller;
     if (_currentPosition != null) {
       moveCameraToPosition(_currentPosition!);
     }
@@ -340,6 +352,19 @@ class PickupProvider extends ChangeNotifier {
     }
   }
 
+  Future<void> moveOtherCameraToPosition(Position position) async {
+    if (_otherMapController != null) {
+      _otherMapController!.animateCamera(
+        CameraUpdate.newCameraPosition(
+          CameraPosition(
+            target: LatLng(position.latitude, position.longitude),
+            zoom: 18.0,
+          ),
+        ),
+      );
+    }
+  }
+
   Future<void> getSuggestions(String query) async {
     final response = await _dio.get(
       'https://maps.googleapis.com/maps/api/place/autocomplete/json',
@@ -362,6 +387,9 @@ class PickupProvider extends ChangeNotifier {
   }
 
   Future<void> searchLocation(String placeId, String description) async {
+    placeId  = placeId;
+    description = description;
+
     final response = await _dio.get(
       'https://maps.googleapis.com/maps/api/place/details/json',
       queryParameters: {
@@ -380,6 +408,15 @@ class PickupProvider extends ChangeNotifier {
         ),
       );
 
+      if(_otherMapController!=null){
+        _otherMapController?.animateCamera(
+          CameraUpdate.newCameraPosition(
+            CameraPosition(target: latLng, zoom: 14.0),
+          ),
+        );
+      }
+
+
       if (_isCurrentLocationField) {
         _currentLocationController.text = description;
         _pickupLatLng = latLng;
@@ -394,7 +431,7 @@ class PickupProvider extends ChangeNotifier {
       }
       notifyListeners();
     } else {
-      log('Failed to load place details');
+      log('4');
     }
   }
 
@@ -506,7 +543,7 @@ class PickupProvider extends ChangeNotifier {
   }
 
   void clearSearchPickUp() {
-    _currentLocationController.clear();
+   /* _currentLocationController.clear();
     _pickupLatLng = null;
     _currentLocationSuggestions = [];
     _destinationSuggestions = [];
@@ -514,7 +551,7 @@ class PickupProvider extends ChangeNotifier {
     _polylines = {};
     _distanceText = null;
     _durationText = null;
-    notifyListeners();
+    notifyListeners();*/
   }
 
   void clearSearchDestination() {

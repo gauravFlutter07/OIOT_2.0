@@ -18,6 +18,7 @@ class DailyRideController extends ChangeNotifier {
   bool get isMyself => _isMyself;
   String get userId => _userId;
 
+
   bool _isTravelInsuranceEnabled = false;
   bool get isTravelInsuranceEnabled => _isTravelInsuranceEnabled;
 
