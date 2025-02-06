@@ -2,6 +2,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:oiot/main.dart';
 import 'package:oiot/src/home_oiot/home_online/driver_searching_page/model/ride_request_success_modal.dart';
 
 import '../../../../api/rider_repo.dart';
@@ -143,7 +144,7 @@ class DriverSearchingProvider extends ChangeNotifier {
           print('Trip data set: ${_tripData!.requestDetails}');
           print('Trip data set: ${_tripData!.tripId}');
 
-          initializeTripFlow(context, _tripData!);
+          initializeTripFlow(context!);
 
           notifyListeners();
 
@@ -200,54 +201,84 @@ class DriverSearchingProvider extends ChangeNotifier {
     }
 }
 
-Future<void> initializeTripFlow(context, RideRequestSuccessModal modal) async {
+Future<void> initializeTripFlow(context) async {
     try {
 
-      final prefs = await SharedPreferences.getInstance();
-       String tripId = modal.tripId.toString();
 
       DatabaseReference ref = FirebaseDatabase.instance.ref();
 
       // Create database reference
-      var tripFlowReference = ref.child('trips_data').child(tripId);
+
+
+
+      var userId = Utils().getDecodedToken()["id"];
+      print("Firebase  ----userId $userId");
+
+      var tripFlowReference = ref.child('riders_data').child(userId);
 
       // Add value event listener
       tripFlowReference.onValue.listen((event) async {
-        print("Firebase  ---- Value :-${event.snapshot.value} ");
+        print("Firebase  ---- current trip id :-${event.snapshot.value} ");
         if (event.snapshot.value == null) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Trip data not found')),
+            const SnackBar(content: Text('Trip ID reference is null')),
           );
           return;
         }
 
-        try {
-          final Map<dynamic, dynamic> data = event.snapshot.value as Map;
 
-          print("Firebase  ---- Firebase  ---- Status :- ${data['status']}");
-          // Handle status changes
-          final String? status = data['status'];
-          if (status != null && status != "0") {
-            String tripStatus = ref.child("tripstatus").get().toString();
-            if ( tripStatus != "0") {
-              tripFlowSwitch(context, status, tripData);
-              // _handleTripFlowStatus(context, tripStatus, event.snapshot);
-            }
-            // Constants.flowStatus = status;
-          }
-
-          // Handle driver token
-          final String? driverToken = data['driver_token'];
-          if (driverToken != null && driverToken != '0') {
-            // Constants.driverToken = driverToken;
-            print("Firebase  ---- Driver token :- $driverToken");
-          }
-        } catch (e) {
-          debugPrint('Error processing trip data: $e');
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error processing trip data: $e')),
-          );
+        var tripStatus = event.snapshot.child('tripstatus').value.toString();
+        if(!GetUtils.isNullOrBlank(tripStatus)! && tripStatus!="0"){
+          _handleTripFlowStatus(context, tripStatus, event.snapshot);
         }
+
+        /*atabaseReference ref2 = FirebaseDatabase.instance.ref();
+
+        var tripIdRef = ref2.child('trips_data').child(tripId);
+        print("ID ref :- $tripIdRef");
+
+
+        tripIdRef.onValue.listen((tripData){
+          if (tripData.snapshot.value == null) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Trip ID reference is null')),
+          );
+          return;
+        }
+
+
+          try {
+            final Map<dynamic, dynamic> data = tripData.snapshot.value as Map;
+
+            print("Firebase  ---- Firebase  ---- Status :- ${data['status']}");
+            // Handle status changes
+            final String? status = data['status'];
+            if (status != null && status != "0") {
+              String tripStatus = ref.child("tripstatus").get().toString();
+              if ( tripStatus != "0") {
+                tripFlowSwitch(context, status, tripData);
+                // _handleTripFlowStatus(context, tripStatus, event.snapshot);
+              }
+              // Constants.flowStatus = status;
+            }
+
+            // Handle driver token
+            final String? driverToken = data['driver_token'];
+            if (driverToken != null && driverToken != '0') {
+              // Constants.driverToken = driverToken;
+              print("Firebase  ---- Driver token :- $driverToken");
+            }
+          } catch (e) {
+            debugPrint('Error processing trip data: $e');
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Error processing trip data: $e')),
+            );
+          }
+
+        });
+
+  */
+
       }, onError: (error) {
         debugPrint('Database error: $error');
         ScaffoldMessenger.of(context).showSnackBar(
@@ -268,37 +299,54 @@ Future<void> initializeTripFlow(context, RideRequestSuccessModal modal) async {
     switch (status) {
       case "Processing":
       // Handle pending status
-      
-      var requestId = snapshot.child('requestId');
-      print("Firebase  ---- requestId :- $requestId");
 
+        print("Firebase  ---- _handleTripFlowStatus Processing");
         break;
       case "No Driver Found":
-        print("Firebase  ---- No Driver Found :-");
+        print("Firebase  ---- _handleTripFlowStatus No Driver Found :-");
       // Handle in progress status  `
         break;
       case "Accepted":
-        tripFlowSwitch(context, status, snapshot);
+        print("Firebase  ---- _handleTripFlowStatus Accepted:-");
+
+        print("Trip id == ${_tripData!.tripId!.toString()}");
+        var ref = FirebaseDatabase.instance.ref().child("trips_data").child(_tripData!.tripId!.toString());
+
+        ref.onValue.listen((onData){
+          final Map<dynamic, dynamic> data = onData.snapshot.value as Map;
+          tripFlowSwitch(context, data['status'],);
+        });
+
+        print("Firebase  ---- _handleTripFlowStatus Your driver is on the way");
+        break;
+
         break;
       case "canceled":
-      // Handle Cancelled status
+        print("Firebase  ---- _handleTripFlowStatus canceled");
+
+        // Handle Cancelled status
         break;
       default:
+        print("Firebase  ---- _handleTripFlowStatus default $status");
       // Handle unknown status
         break;
     }
   }
 
-  void tripFlowSwitch(context, String status, tripData) {
+  void tripFlowSwitch(
+    context,
+    String status,
+  ) {
     switch (status) {
       case "1":
-      // tripTitle.text = 'Your driver is on the way';
+        // tripTitle.text = 'Your driver is on the way';
         Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) =>  DriverOnWay(tripData: tripData!,),
-            )
-        );
+              builder: (context) => DriverOnWay(
+                tripData: tripData!,
+              ),
+            ));
         print("Firebase  ---- Your driver is on the way");
         break;
 
@@ -307,20 +355,17 @@ Future<void> initializeTripFlow(context, RideRequestSuccessModal modal) async {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) =>
-            const DriverReachedScreen(),
+            builder: (context) => const DriverReachedScreen(),
           ),
         );
         print("Firebase  ---- Driver has arrived");
         break;
 
       case "3":
-
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) =>
-            const TripID(),
+            builder: (context) => const TripID(),
           ),
         );
         // tripTitle.text = 'Welcome happy ride';
@@ -335,7 +380,7 @@ Future<void> initializeTripFlow(context, RideRequestSuccessModal modal) async {
             builder: (context) => TripCompleted(),
           ),
         );
-      print("Firebase  ---- Your trip has ended");
+        print("Firebase  ---- Your trip has ended");
         break;
 
       case "5":
@@ -343,7 +388,4 @@ Future<void> initializeTripFlow(context, RideRequestSuccessModal modal) async {
         break;
     }
   }
-
-
-
 }
