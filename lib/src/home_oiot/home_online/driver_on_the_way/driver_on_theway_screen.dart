@@ -55,7 +55,7 @@ class DriverOnWay extends StatelessWidget {
             snap: true,
             maxChildSize: 1,
             builder: (BuildContext context, ScrollController scrollController) {
-              final databaseRef = FirebaseDatabase.instance.ref().child('drivers_data').child('675bc17adc204501cd6fb2e3');
+              final databaseRef = FirebaseDatabase.instance.ref().child('trips_data').child('85249');
 
               return StreamBuilder(
                 builder: (context, snapshot) {
@@ -73,6 +73,7 @@ class DriverOnWay extends StatelessWidget {
                   }
 
                   Map data = snapshot.data!.snapshot.value! as Map;
+                  final databaseRef1 = FirebaseDatabase.instance.ref().child('drivers_data').child('675bc17adc204501cd6fb2e3');
 
 
                   return Consumer<DriverOnTheWayProvider>(
@@ -120,7 +121,7 @@ class DriverOnWay extends StatelessWidget {
                                                       ''),
                                             ),
                                             title: Text(
-                                              data['proof_status']!,
+                                              data['drivername']!,
                                               style: tsRegularBold,
                                             ),
                                             subtitle: Row(
@@ -146,8 +147,7 @@ class DriverOnWay extends StatelessWidget {
                                             child: Column(
                                               children: [
                                                 Text(
-                                                  driverOnTheWayData?.driverTime ??
-                                                      '',
+                                                  data['duration']!,
                                                   style: tsRegularBold,
                                                 ),
                                                 Text(
