@@ -32,7 +32,7 @@ class MyCodeTabForPayment extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const CashPaymentMethod(),
+                      builder: (context) => const CashPaymentMethod(data:{}),
                     ),
                   );
                 },

@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:oiot/main.dart';
 import '../../../../../imports.dart';
 import '../../../../../models/basic_fare_modal.dart';
 
@@ -99,9 +100,8 @@ class DailyRideController extends ChangeNotifier {
 
   Timer? _timer;
   final DatabaseReference _databaseReference =
-      FirebaseDatabase.instance.ref().child('rider_locations');
+      FirebaseDatabase.instance.ref().child('riders_data');
 
-  final String driverId = "unique_rider_id"; // Unique identifier for the rider
 
   void startLocationUpdates() {
     _timer = Timer.periodic(
@@ -124,11 +124,11 @@ class DailyRideController extends ChangeNotifier {
     final longitude = position.longitude.toString();
 
     // Update the location in Firebase Realtime Database
-    await _databaseReference.child(driverId).set({
+   /* await _databaseReference.child(Utils().getDecodedToken()["id"]).set({
       'latitude': latitude,
       'longitude': longitude,
       'timestamp': DateTime.now().toIso8601String(),
-    });
+    });*/
 
     notifyListeners();
   }

@@ -8,6 +8,7 @@ import 'package:oiot/src/home_oiot/home_online/driver_searching_page/model/ride_
 import '../../../../api/rider_repo.dart';
 import '../../../../imports.dart';
 import '../../../../models/basic_fare_modal.dart';
+import '../../../../models/selected_ride_modal.dart';
 import '../service_type/widgets/trip_completed.dart';
 import 'model/searched_driver_list_modal.dart';
 
@@ -25,6 +26,7 @@ class DriverSearchingProvider extends ChangeNotifier {
 
   RideRequestSuccessModal? _tripData;
   RideRequestSuccessModal? get tripData => _tripData;
+
 
   late Timer _timer;
   int _remainingSeconds = 60;
@@ -69,6 +71,9 @@ class DriverSearchingProvider extends ChangeNotifier {
 
   var estId = await getEstimationId(context, driverData,vehicleCategoryModal.id??'-');
 
+  final PickupProvider pickupProvider = Provider.of<PickupProvider>(context, listen: false);
+
+
   if(estId==null){
     Fluttertoast.showToast(msg: "Sorry, Not able to proceed at this time");
     return;
@@ -94,40 +99,6 @@ class DriverSearchingProvider extends ChangeNotifier {
     'noofseats': "1"
   };
 
-  /*var map2 = {
-    "userId": "",
-    "phone": "",
-    "email": "",
-    "fname": "",
-    "requestFrom": "app",
-    "adminId": "",
-    "promo": "",
-    "promoAmt": "",
-    "tripType": "daily",
-    "driverAssignmentType": "auto-assign",
-    "driverName": "",
-    "driverId": driverData.id,
-    "tripTime": DateFormat('hh:mm a').format(DateTime.now()),
-    "tripDate": DateFormat('dd-MM-yyyy').format(DateTime.now()),
-    "paymentMode": "Cash",
-    "pickupCity": "",
-    "bookingType": "rideNow",
-    "serviceType": vehicleCategoryModal.type,
-    "estimationId": estId,
-    "hotelId": "",
-    "packageId": "",
-    "vehicleTypeId": "",
-    "pickupLat": "",
-    "pickupLng": "",
-    "noofseats": 0,
-    "pickupAddress": "",
-    "outstationType": "",
-    "dropLng": "",
-    "dropLat": "",
-    "acneeded": true,
-    "startDay": "",
-    "returnDay": ""
-  };*/
 
 
 
@@ -144,13 +115,19 @@ class DriverSearchingProvider extends ChangeNotifier {
           print('Trip data set: ${_tripData!.requestDetails}');
           print('Trip data set: ${_tripData!.tripId}');
 
-          initializeTripFlow(context!);
-
-          notifyListeners();
-
+          if(_tripData?.tripId!=null){
+            localStorageService.setTripId(_tripData?.tripId!);
 
 
-        }
+            pickupProvider.selectedDriver = driverData;
+
+            initializeTripFlow(context!);
+
+            notifyListeners();
+            } else {
+              Fluttertoast.showToast(msg: 'Something went wrong');
+            }
+          }
 
       } else {
         Fluttertoast.showToast(msg: 'Something went wrong');
@@ -189,6 +166,7 @@ class DriverSearchingProvider extends ChangeNotifier {
         return null;
       } else {
         if (result != null) {
+          pickupProvider.estimatedModal = selectedRIdeDetailsModalFromJson(jsonEncode(result));
           return result['estimationId'];
         } else {
           Fluttertoast.showToast(msg: 'Something went wrong');
@@ -298,7 +276,6 @@ Future<void> initializeTripFlow(context) async {
     print("Firebase  ---- Status :- _handleTripFlowStatus $status");
     switch (status) {
       case "Processing":
-      // Handle pending status
 
         print("Firebase  ---- _handleTripFlowStatus Processing");
         break;
@@ -355,7 +332,9 @@ Future<void> initializeTripFlow(context) async {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const DriverReachedScreen(),
+            builder: (context) => DriverReachedScreen(
+              tripData: tripData!,
+            ),
           ),
         );
         print("Firebase  ---- Driver has arrived");

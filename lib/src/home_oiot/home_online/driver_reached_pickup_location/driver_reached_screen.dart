@@ -1,7 +1,13 @@
+import 'package:firebase_database/firebase_database.dart';
+import 'package:oiot/src/home_oiot/home_online/driver_searching_page/model/ride_request_success_modal.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import '../../../../imports.dart';
 
 class DriverReachedScreen extends StatelessWidget {
-  const DriverReachedScreen({super.key});
+  final RideRequestSuccessModal tripData;
+
+  const DriverReachedScreen({super.key, required  this.tripData});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +23,14 @@ class DriverReachedScreen extends StatelessWidget {
           child: DraggableScrollableSheet(
             maxChildSize: 0.85,
             builder: (BuildContext context, ScrollController scrollController) {
-              return Consumer<DriverOnTheWayProvider>(
+
+              return Consumer<PickupProvider>(
                 builder: (BuildContext context, provider, Widget? child) {
-                  DriverOnTheWayDataModel? driverOnTheWayData =
-                      provider.driverOntheawayDetails;
+
+                  var data = provider.estimatedModal;
+                  var driverData = provider.selectedDriver;
+                  print('Estimation Data: ${data?.toJson().toString()} ');
+
                   return Container(
                     color: whiteColor,
                     child: ListView(
@@ -47,19 +57,17 @@ class DriverReachedScreen extends StatelessWidget {
                                 height10,
                                 Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Expanded(
                                       child: ListTile(
                                         leading: CircleAvatar(
                                           backgroundColor: whiteColor,
                                           radius: 26,
-                                          backgroundImage: NetworkImage(
-                                              driverOnTheWayData?.driverPhoto ??
-                                                  ''),
+                                          backgroundImage: NetworkImage('https://cdn-icons-png.flaticon.com/128/149/149071.png'),
                                         ),
                                         title: Text(
-                                          driverOnTheWayData?.driverName ?? '',
+                                          driverData?.firstName.toString()??'NA',
                                           style: tsRegularBold,
                                         ),
                                         subtitle: Row(
@@ -68,9 +76,8 @@ class DriverReachedScreen extends StatelessWidget {
                                               Icons.star,
                                               color: Colors.amber,
                                             ),
-                                            Text(driverOnTheWayData
-                                                    ?.driverRating ??
-                                                ''),
+                                            Text(driverData?.ratings?.nos.toString()??''
+                                            ),
                                           ],
                                         ),
                                       ),
@@ -85,14 +92,12 @@ class DriverReachedScreen extends StatelessWidget {
                                         child: Column(
                                           children: [
                                             Text(
-                                              driverOnTheWayData
-                                                      ?.tripDistance ??
-                                                  '',
+                                              data?.distanceDetails?.distanceLabel??'NA',
                                               style: tsSmallBold,
                                             ),
                                             Text(
-                                              driverOnTheWayData?.tripTime ??
-                                                  '',
+                                              data?.distanceDetails?.timeValue.toString()??'NA',
+
                                               style: tsExtraSmallGrey,
                                             ),
                                           ],
@@ -104,7 +109,7 @@ class DriverReachedScreen extends StatelessWidget {
                                 height10,
                                 Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Expanded(
                                       child: ListTile(
@@ -112,29 +117,24 @@ class DriverReachedScreen extends StatelessWidget {
                                           backgroundColor: whiteColor,
                                           radius: 26,
                                           backgroundImage: NetworkImage(
-                                              driverOnTheWayData
-                                                      ?.vehiclePhoto ??
-                                                  ''),
+                                            "${ApiEndUrl.imageBaseUrl} ${data?.vehicleDetailsAndFare?.vehicleDetails?.image??''}",),
                                         ),
                                         title: Text(
-                                          driverOnTheWayData?.vehicleModel ??
-                                              '',
+                                          driverData?.vehicleType??'NA',
                                           style: tsRegularBold,
                                         ),
                                         subtitle: Text(
-                                            driverOnTheWayData?.vehicleNumber ??
-                                                ''),
+                                          driverData?.vehicleNumber??'NA',),
                                       ),
                                     ),
                                     Padding(
                                       padding: rightPadding5,
                                       child: Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.end,
+                                        CrossAxisAlignment.end,
                                         children: [
                                           Text(
-                                              driverOnTheWayData?.tripAmount ??
-                                                  '',
+                                              data?.vehicleDetailsAndFare?.fareDetails?.totalFare??'NA',
                                               style: tsRegularBold),
                                           Text(
                                             AppLocalizations.of(context)!
@@ -166,8 +166,7 @@ class DriverReachedScreen extends StatelessWidget {
                                           style: tsRegular,
                                         ),
                                         subtitle: Text(
-                                          driverOnTheWayData?.pickUpLocation ??
-                                              '',
+                                          data?.distanceDetails?.from??'NA',
                                           style: tsRegularBold,
                                         ),
                                       ),
@@ -194,8 +193,7 @@ class DriverReachedScreen extends StatelessWidget {
                                           style: tsRegular,
                                         ),
                                         subtitle: Text(
-                                          driverOnTheWayData?.dropLocation ??
-                                              '',
+                                          data?.distanceDetails?.to??'NA',
                                           style: tsRegularBold,
                                         ),
                                       ),
@@ -208,7 +206,7 @@ class DriverReachedScreen extends StatelessWidget {
                                     children: [
                                       CircleAvatar(
                                         backgroundColor:
-                                            blueMain.withOpacity(0.2),
+                                        blueMain.withOpacity(0.2),
                                         child: Icon(
                                           Icons.email,
                                           color: blueMain,
@@ -221,7 +219,7 @@ class DriverReachedScreen extends StatelessWidget {
                                               context,
                                               MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const SosPage(),
+                                                const SosPage(),
                                               ));
                                         },
                                         child: Image.asset(
@@ -233,11 +231,11 @@ class DriverReachedScreen extends StatelessWidget {
                                       width20,
                                       InkWell(
                                         onTap: () {
-                                          provider.shareFunction();
+                                          // provider.shareFunction();
                                         },
                                         child: CircleAvatar(
                                           backgroundColor:
-                                              blueMain.withOpacity(0.2),
+                                          blueMain.withOpacity(0.2),
                                           child: Icon(
                                             Icons.share_outlined,
                                             color: blueMain,
@@ -249,15 +247,14 @@ class DriverReachedScreen extends StatelessWidget {
                                         decoration: BoxDecoration(
                                           color: darkWhiteBackground,
                                           borderRadius:
-                                              BorderRadius.circular(5),
+                                          BorderRadius.circular(5),
                                         ),
                                         child: Padding(
                                           padding: padding8,
                                           child: Column(
                                             children: [
                                               Text(
-                                                driverOnTheWayData?.tripOtp ??
-                                                    '',
+                                                tripData.otp??'NA',
                                                 style: TextStyle(
                                                   color: darkBlack,
                                                   fontWeight: FontWeight.bold,
@@ -292,14 +289,26 @@ class DriverReachedScreen extends StatelessWidget {
                                         padding: const EdgeInsets.symmetric(
                                             vertical: 7.5, horizontal: 25),
                                         child: InkWell(
-                                          onTap: () {
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (context) =>
-                                                    const TripID(),
-                                              ),
-                                            );
+                                          onTap: () async {
+                                            var mobileNo = driverData?.phone;
+
+                                            if(mobileNo!=null){
+                                              final String call = 'tel:$mobileNo';
+
+                                              if (await canLaunch(call)) {
+                                                await launch(call);
+                                              }
+                                            }else{
+                                              Fluttertoast.showToast(msg: 'No mobile no found');
+                                            }
+
+                                            /*Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        const TripID(),
+                                                  ),
+                                                );*/
                                           },
                                           child: Row(
                                             mainAxisSize: MainAxisSize.min,
@@ -322,7 +331,7 @@ class DriverReachedScreen extends StatelessWidget {
                                     Expanded(
                                       child: Padding(
                                         padding:
-                                            const EdgeInsets.only(left: 25),
+                                        const EdgeInsets.only(left: 25),
                                         child: CustomButton(
                                           onTap: () {
                                             Navigator.push(
@@ -352,6 +361,7 @@ class DriverReachedScreen extends StatelessWidget {
                   );
                 },
               );
+
             },
           ),
         ),

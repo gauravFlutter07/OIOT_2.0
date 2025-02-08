@@ -15,6 +15,8 @@ import 'dart:developer';
 
 import '../../../../../api/map_api.dart';
 import '../../../../../imports.dart';
+import '../../../../../models/selected_ride_modal.dart';
+import '../../driver_searching_page/model/searched_driver_list_modal.dart';
 import '../../estimated_price/outstation_estimation_screen.dart';
 import 'model/outstation_taxi_list_modal.dart';
 
@@ -54,6 +56,15 @@ class PickupProvider extends ChangeNotifier {
   RentalFareListModal? _rentalFareListModal;
   RentalFareListModal? get rentalFareListModal => _rentalFareListModal;
 
+
+  SelectedRIdeDetailsModal? _estimatedModal;
+
+  set estimatedModal(SelectedRIdeDetailsModal? value) {
+    _estimatedModal = value;
+  }
+
+  SelectedRIdeDetailsModal? get estimatedModal => _estimatedModal;
+
   DateTime get selectedStartDate => _selectedStartDate;
   TimeOfDay get selectedStartTime => _selectedStartTime;
   DateTime get selectedEndDate => _selectedEndDate;
@@ -69,6 +80,8 @@ class PickupProvider extends ChangeNotifier {
 
   String placeId = '';
   String description = '';
+
+  Driver? selectedDriver;
 
   Color isClickedFunction() {
     _isclicked = !_isclicked;

@@ -8,7 +8,7 @@ enum _Key {
   firstTime,
   isLoggedIn,
   userData,
-
+  tripId,
   token,
 }
 
@@ -91,6 +91,9 @@ class LocalStorageService extends ChangeNotifier {
 
   /* Store the login state of user Model*/
 
+  int? get tripId {
+    return _sharedPreferences?.getInt(_Key.tripId.toString());
+  }
   UserDataModel? get userData {
     final rawJson = _sharedPreferences?.getString(_Key.userData.toString());
     if (rawJson == null) {
@@ -107,6 +110,16 @@ class LocalStorageService extends ChangeNotifier {
       log('userData :${userData.mobile}');
     } else {
       _sharedPreferences?.remove(_Key.userData.toString());
+    }
+  }
+
+  setTripId(int? tripId) {
+    if (tripId != null) {
+      _sharedPreferences?.setInt(
+          _Key.tripId.toString(), tripId!);
+      log('trip id set to : $tripId');
+    } else {
+      _sharedPreferences?.remove(_Key.tripId.toString());
     }
   }
 }

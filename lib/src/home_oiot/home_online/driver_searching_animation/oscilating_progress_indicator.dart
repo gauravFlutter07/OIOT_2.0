@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:oiot/models/basic_fare_modal.dart';
 import 'package:oiot/src/home_oiot/home_online/driver_searching_page/driver_searching_screen.dart';
+import 'package:oiot/src/home_oiot/home_online/driver_searching_page/model/ride_request_success_modal.dart';
 
 import '../../../../api/rider_repo.dart';
 import '../../../../imports.dart';
@@ -52,7 +53,9 @@ class _OscillatingProgressIndicatorState extends State<OscillatingProgressIndica
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const DriverReachedScreen(),
+            builder: (context) =>  DriverReachedScreen(
+              tripData: RideRequestSuccessModal(),
+            ),
           ),
         );
       },
