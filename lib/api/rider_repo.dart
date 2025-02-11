@@ -158,4 +158,32 @@ class RiderRepo{
     final response =  apiHelper.post(url, body );
     return response;
   }
+
+  // get favourites api hit
+  static Future<dynamic> fetchFavourites(body) async {
+    final url = "${ApiEndUrl.baseUrl}${ApiEndUrl.ridersAddress}";
+    final response = apiHelper.get(url, body);
+    return response;
+  }
+
+  // delete favourites api hit
+  static Future<dynamic> deleteFavourite(String id, body) async {
+    final url = "${ApiEndUrl.baseUrl}${ApiEndUrl.ridersAddressDelete}/${id}";
+    final response = apiHelper.delete(url, body: body);
+    return response;
+  }
+
+  //post add fav api
+  static Future<dynamic> addMyFav(body) async {
+    final url = "${ApiEndUrl.baseUrl}${ApiEndUrl.ridersAddress}";
+    final response = apiHelper.post(url, body);
+    return response;
+  }
+
+  //get legal data
+  static Future<dynamic> fetchLegalData(body) async {
+    final url = ApiEndUrl.legalData;
+    final response = apiHelper.get(url, body);
+    return response;
+  }
 }

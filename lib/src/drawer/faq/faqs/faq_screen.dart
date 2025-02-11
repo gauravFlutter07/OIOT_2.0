@@ -1,3 +1,4 @@
+
 import '../../../../imports.dart';
 
 class FAQsPage extends StatelessWidget {
@@ -52,16 +53,23 @@ class FAQsPage extends StatelessWidget {
                           ),
                           height05,
                           Consumer<TermsAndServicesProvider>(
-                            builder: (BuildContext context, provider,
-                                Widget? child) {
-                              TermsAndConditionsModel? terms =
-                                  provider.termsAndConditionsModel;
-                              return Text(
-                                terms?.content ?? '',
-                                style: tsRegular,
-                                maxLines: 3,
-                                overflow: TextOverflow.ellipsis,
-                              );
+                            builder: (BuildContext context, provider, child) {
+                              if (provider.tcData.length > 7 &&
+                                  provider.tcData[7].desc != null) {
+                                // LegalModel? terms = provider.legalModel;
+                                var terms = provider.tcData[7].desc ?? '';
+                                var termData =
+                                    provider.extractTextFromHtml(terms);
+                                return Text(
+                                  termData.trim(),
+                                  style: tsRegular,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                );
+                              } else {
+                                return const Center(
+                                    child: CircularProgressIndicator());
+                              }
                             },
                           ),
                           Row(

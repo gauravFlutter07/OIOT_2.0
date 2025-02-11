@@ -1,4 +1,9 @@
+
+
+
 import '../../../imports.dart';
+import 'add_favourite/add_favourite_screen.dart';
+import 'model/favourites_data_model.dart';
 
 class FavouriteScreen extends StatelessWidget {
   const FavouriteScreen({super.key});
@@ -20,25 +25,36 @@ class FavouriteScreen extends StatelessWidget {
                 padding: padding8,
                 child: Consumer<FavouriteProvider>(
                   builder: (BuildContext context, provider, Widget? child) {
-                    List<FavouriteItemModel> favouriteList =
-                        provider.favouriteList;
+                    List<MyFavouritesModel> myFavourites =
+                        provider.myFavourites;
+
+                    if (provider.myFavourites == null ||
+                        provider.myFavourites!.isEmpty) {
+                      provider.isLoading == true;
+                      return const Center(
+                          child: Text("No Favorites Data found"));
+                    } // no data found block
+                    if (provider.isLoading == true) {
+                      provider.fetchFavouritesList();
+                      provider.isLoading = false;
+                    }
                     return ListView.separated(
                       separatorBuilder: (context, index) {
                         return height10;
                       },
-                      itemCount: favouriteList.length,
+                      itemCount: myFavourites.length,
                       itemBuilder: (context, index) {
-                        FavouriteItemModel favourite = favouriteList[index];
+                        MyFavouritesModel favourite = myFavourites[index];
                         return Card(
                           elevation: 2,
                           color: whiteColor,
                           child: ListTile(
                             leading: Icon(Icons.favorite, color: redColor),
                             title: Text(
-                              favourite.category,
+                              favourite.label,
                               style: tsRegularBold,
                             ),
-                            subtitle: Text(favourite.location),
+                            subtitle: Text(favourite.address),
                             trailing: IconButton(
                               onPressed: () {
                                 showDialog(
@@ -68,6 +84,9 @@ class FavouriteScreen extends StatelessWidget {
                                             ),
                                             TextButton(
                                               onPressed: () {
+                                                provider.deleteFavourite(
+                                                  favourite.id,
+                                                );
                                                 Navigator.of(context).pop();
                                               },
                                               child: Text(
@@ -101,7 +120,7 @@ class FavouriteScreen extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const PickUpScreen(flag: 1),
+              builder: (context) => AddFavouriteScreen(),
             ),
           );
         },

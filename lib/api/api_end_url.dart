@@ -28,4 +28,15 @@ class ApiEndUrl {
   static String requestRentalTaxi  = 'requestRentalTaxi';
   static String scheduledTaxiRider  = 'riderUpcomingScheduleTaxi';
 
+  static String ridersAddress = 'ridersAddress'; //get favourites end url
+  static String ridersAddressDelete = 'ridersAddress'; //delete favorite end url
+  //Legal data url
+  static String legalData = 'http://4.240.74.40:8080/adminapi/pages?landingtype=OIOT&_page=1&_limit=10';
+
+  //select interested driver
+  static String selectInterestedDriver = "acceptdriverintrest";
+
+  //get interested Driver List
+  static String getInterestedDriverList = "intresteddriverlistforrider";
+
 }

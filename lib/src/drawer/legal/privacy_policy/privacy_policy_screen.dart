@@ -1,4 +1,3 @@
-
 import '../../../../imports.dart';
 
 class PrivacyPolicyScreen extends StatelessWidget {
@@ -9,7 +8,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
     return Scaffold(
       body: Consumer<PrivacyPolicyProvider>(
         builder: (context, provider, _) {
-          if (provider.privacyPolicyModel != null) {
+          if (provider.privacyPolicy.length > 6) {
+            var privacyPolicyData = provider.privacyPolicy[3].desc; //added
             return Padding(
               padding: padding15,
               child: SafeArea(
@@ -23,11 +23,13 @@ class PrivacyPolicyScreen extends StatelessWidget {
                       '${AppLocalizations.of(context)!.updateOn}: ${provider.privacyPolicyModel!.lastUpdate}',
                       style: tsRegularBold,
                     ),
-                    height10,
+                    height05,
                     Expanded(
                       child: SingleChildScrollView(
                         child: Text(
-                          provider.privacyPolicyModel!.content,
+                          provider
+                              .extractTextFromHtml(privacyPolicyData!)
+                              .trim(),
                           style: tsRegularBoldGrey,
                         ),
                       ),

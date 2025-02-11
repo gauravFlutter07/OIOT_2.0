@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 
 import '../../../../../api/rider_repo.dart';
 import '../../../../../imports.dart';
+import '../../../../../models/basic_fare_modal.dart';
 import 'model/my_rides_modal.dart';
 
 class PastRideProvider extends ChangeNotifier {

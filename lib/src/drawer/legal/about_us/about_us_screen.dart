@@ -18,11 +18,15 @@ class AboutUs extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Consumer<AboutUsProvider>(
                     builder: (context, provider, _) {
-                      if (provider.aboutUsDataModel != null) {
-                        return _buildAboutUsContent(
-                            provider.aboutUsDataModel!, context);
+                      if (provider.aboutUs.length > 6) {
+                        var aboutUsField = provider.aboutUs[1].desc; //added
+                        height05;
+                        return Text(
+                          provider.extractTextFromHtml(aboutUsField!).trim(),
+                          style: tsRegular,
+                        );
                       } else {
-                        return const CircularProgressIndicator();
+                        return const Center(child: CircularProgressIndicator());
                       }
                     },
                   ),

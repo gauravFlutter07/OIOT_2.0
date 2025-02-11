@@ -8,7 +8,7 @@ class CustomFAQHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
           width: 40,
@@ -28,24 +28,27 @@ class CustomFAQHeader extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(
+          width: 130,
+        ),
         Text(
           title,
           style: tsMediumBold,
         ),
-        InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const AddNewFAQ(),
-              ),
-            );
-          },
-          child: Text(
-            AppLocalizations.of(context)!.addNew,
-            style: tsRegularUnderline,
-          ),
-        ),
+        // InkWell(
+        //   onTap: () {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(
+        //         builder: (context) => const AddNewFAQ(),
+        //       ),
+        //     );
+        //   },
+        //   child: Text(
+        //     AppLocalizations.of(context)!.addNew,
+        //     style: tsRegularUnderline,
+        //   ),
+        // ),
       ],
     );
   }
