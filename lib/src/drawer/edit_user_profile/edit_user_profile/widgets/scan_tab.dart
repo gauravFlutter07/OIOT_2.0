@@ -8,7 +8,7 @@ class ScanTab extends StatelessWidget {
     return Center(
       child: ElevatedButton(
         onPressed: () {
-          scanQRCode();
+          // scanQRCode();
         },
         child: Text(
           AppLocalizations.of(context)!.clickHereToScanQrCode,

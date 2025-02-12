@@ -1,5 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:oiot/imports.dart';
+import 'package:share_plus/share_plus.dart';
 import '../../../../main.dart';
 import '../feedback_driver/feedback_driver.dart';
 import '../final_invoice/booking_invoice_screen.dart';
@@ -9,10 +10,8 @@ class CashPaymentMethod extends StatelessWidget {
   const CashPaymentMethod({super.key, required this.data});
 
   Future<void> shareFunction() async {
-    await FlutterShare.share(
-      title: 'Share via',
-      text: 'Thank you for sharing oiot',
-      chooserTitle: 'Share via',
+    await Share.share(
+      'Thank you for sharing oiot',
     );
   }
 

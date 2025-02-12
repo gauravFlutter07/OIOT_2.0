@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:oiot/models/user_profile_modal.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../../../imports.dart';
 
@@ -38,12 +39,8 @@ class ReferralCodeBox extends StatelessWidget {
               child: TextButton.icon(
                 onPressed: () async {
                   try {
-                    await FlutterShare.share(
-                      title: AppLocalizations.of(context)!.referralCode,
-                      text:
-                          '${AppLocalizations.of(context)!.checkOutthisReferralCode}: ${myProfile?.referal ?? ''}',
-                      chooserTitle:
-                          AppLocalizations.of(context)!.shareReferralCode,
+                    await Share.share(
+                      '${AppLocalizations.of(context)!.checkOutthisReferralCode}: ${myProfile?.referal ?? ''}',
                     );
                   } catch (e) {
                     log('Error sharing: $e');

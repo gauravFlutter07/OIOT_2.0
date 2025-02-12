@@ -1,4 +1,6 @@
 import 'dart:developer';
+import 'package:share_plus/share_plus.dart';
+
 import '../../../../imports.dart';
 
 class BookingProvider extends ChangeNotifier {
@@ -62,10 +64,7 @@ class BookingProvider extends ChangeNotifier {
   }
 
   Future<void> shareFunction() async {
-    await FlutterShare.share(
-      title: 'Share via',
-      text: 'Thank you for sharing oiot',
-      chooserTitle: 'Share via',
+    await Share.share('Thank you for sharing oiot',
     );
   }
 }

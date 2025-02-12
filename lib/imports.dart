@@ -77,7 +77,6 @@ export 'package:oiot/src/home_oiot/drawer/drawer_screen.dart';
 
 export 'package:oiot/src/welcome_page/welcome_screen.dart';
 
-export 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 export 'package:oiot/src/drawer/edit_user_profile/edit_user_profile/qr_controller.dart';
 export 'package:oiot/src/drawer/edit_user_profile/edit_user_profile/widgets/my_code_tab.dart';
 export 'package:oiot/src/drawer/edit_user_profile/edit_user_profile/widgets/scan_tab.dart';

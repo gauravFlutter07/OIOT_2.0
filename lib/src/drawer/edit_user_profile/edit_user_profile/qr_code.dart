@@ -80,7 +80,7 @@ class MyQrCode extends StatelessWidget {
   }
 }
 
-void scanQRCode() async {
+/*void scanQRCode() async {
   try {
     // ignore: unused_local_variable
     final qrCode = await FlutterBarcodeScanner.scanBarcode(
@@ -94,4 +94,4 @@ void scanQRCode() async {
   } on PlatformException {
     // getResultQr = 'Failed to scan QR Code.';
   }
-}
+}*/

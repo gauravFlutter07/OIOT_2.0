@@ -4,6 +4,7 @@ import 'dart:developer';
 
 import 'package:get/get.dart';
 import 'package:oiot/src/drawer/my_rides/my_rides_screen/my_rides.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../../../../api/rider_repo.dart';
 import '../../../../../../imports.dart';
@@ -30,10 +31,9 @@ class AcceptedRidePovider extends ChangeNotifier {
   }
 
   Future<void> shareFunction() async {
-    await FlutterShare.share(
-      title: 'Share via',
-      text: 'Thank you for sharing oiot',
-      chooserTitle: 'Share via',
+    await Share.share(
+      'Thank you for sharing oiot',
+
     );
   }
 }

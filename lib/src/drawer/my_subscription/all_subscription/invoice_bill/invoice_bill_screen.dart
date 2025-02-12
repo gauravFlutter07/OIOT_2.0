@@ -1,4 +1,5 @@
 import 'package:oiot/widgets/app_text_widget.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../../../imports.dart';
 
@@ -47,10 +48,7 @@ class InvoiceBill extends StatefulWidget {
 
 class _InvoiceBillState extends State<InvoiceBill> {
   Future<void> shareFunction() async {
-    await FlutterShare.share(
-      title: 'Share via',
-      text: 'Sharing oiot invoice',
-      chooserTitle: 'Share via',
+    await Share.share('Sharing oiot invoice',
     );
   }
 
